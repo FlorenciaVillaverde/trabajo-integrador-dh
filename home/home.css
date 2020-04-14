@@ -113,14 +113,12 @@ h3{
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 	margin-left: 15px;
+	}
 
-
-
-
-/*footer {
-	background-color: white;	
-}
-
+footer{
+		background-color: white;
+	}
+	
 ul.deezer{
 	display: grid;
 	grid-template-columns: 45% 45% ;
@@ -135,4 +133,3 @@ ul.deezer{
 	width: 100%;
 
 }
-*/
