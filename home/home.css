@@ -51,3 +51,24 @@ table {
 body{
     background-color: aqua;
 }
+
+
+
+
+footer{
+	background-color: white;	
+}
+
+ul.deezer{
+	display: grid;
+	grid-template-columns: 45% 45% ;
+	justify-content: space-between;
+}
+
+.integrantes{
+	color: black;
+}
+
+.logo{
+	width: 100%;
+}
