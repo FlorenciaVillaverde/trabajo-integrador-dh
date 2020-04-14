@@ -49,5 +49,68 @@ table {
 }
 
 body{
-    background-color: aqua;
+    background-color:#1a1a1a;
+}
+
+/*
+main{
+    display: grid;
+	grid-template-columns: 20% 20% 20% 20% ;
+	grid-template-rows:15% 15% 15% 15% 15%;
+	justify-content: space-around;
+	gap: 5px 0px;
+
+}
+*/
+img{
+	width: 100%;
+}
+
+/* como hacer que quede la mitad y scrollear a la derecha las imagenes y que seria carrousel*/
+
+.tracks{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% ;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+
+.albums{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% ;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.artists{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% ;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.playlists{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% ;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.podcasts{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	justify-content: space-around;
+	margin-top: 10px;
+
+}
+
+h3{
+    color: aliceblue;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+	margin-left: 15px;
 }
