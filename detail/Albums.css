@@ -49,6 +49,78 @@ table {
 }
 /*ACA ARRANCA EL CSS NUESTRO */
 
+
 body{
-    background-color: aqua;
+	background: #1a1a1a;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+#foto-album{
+	width: 50%;
+	/*hacer la imagen cuadrada y que no quede crota*/
+	margin: 0 auto;
+	margin-top: 10%;
+    display: block;
+    border: 1px solid white;
+}
+div h1{
+	text-align: center;
+	color: azure;
+	font-size: x-large;
+	margin-top:5%;
+}
+div h2{
+	text-align: center;
+	color: gray;
+	font-size: small;
+	margin-top: 3%;
+}
+div h2 a{
+	color: gray;
+}
+main{
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	justify-content: space-between;
+
+}
+main ul li a {
+	font-size: medium;
+	color: white;
+	text-decoration: none;
+	padding: 5%;
+
+}
+main ul li{
+	margin-top: 5%;
+}
+main ul li h4{
+	color: gray;
+	font-size: x-small;
+	padding-left: 5%;
+	margin-top: 1%;
+}
+/* Agregar lineas divisoras entre
+ canciones cuando sea tablet/dec */
+
+aside ul {
+	color: white;
+	padding-left: 5%;
+	font-size: x-small;
+
+	display: grid;
+	grid-template-columns: 20% 75% ;
+	justify-content: space-around;
+}
+aside{
+	margin-top: 5%;
+}
+aside img{
+	width: 100%;
+	/*hacer la imagen redonda y que no quede crota*/
+}
+aside div{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
