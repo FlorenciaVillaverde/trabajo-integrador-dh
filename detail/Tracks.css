@@ -50,6 +50,73 @@ table {
 
 /*ACA ARRANCA EL CSS NUESTRO */
 
+header{
+	background-color: white;
+	height: 40%;
+	width: 100%;
+}
 body{
-    background-color: aqua;
+    background-color:#1a1a1a;
+}
+.container{
+	margin: 0 auto;
+    width: 80%;
+}
+#foto-cancion{
+	width: 50%;
+	/*hacer la imagen cuadrada y que no quede crota*/
+	margin: 0 auto;
+	margin-top: 10%;
+    display: block;
+    border: 1px solid white;
+}
+
+div h1{
+	text-align: center;
+	color: azure;
+	font-size: x-large;
+	margin-top:5%;
+}
+div h2{
+	text-align: center;
+	color: gray;
+	font-size: small;
+	margin-top: 3%;
+}
+div h2 a{
+	color: gray;
+}
+
+button {
+	width: 70%;
+	height: 50px;
+	background-color:transparent;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #383838;
+	margin: 0 auto;
+	margin-top: 10%;
+    display: block;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+       
+aside ul {
+	color: white;
+	padding-left: 5%;
+	font-size: small;
+}
+aside{
+text-align: center;
+margin-top: 10%;
 }
