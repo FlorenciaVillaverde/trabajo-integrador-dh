@@ -98,18 +98,15 @@ button {
 	font-size:17px;
 	padding:16px 31px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #383838;
 	margin: 0 auto;
 	margin-top: 10%;
     display: block;
 }
-.myButton:hover {
-	background-color:transparent;
+button:hover {
+	background-color:white;
+	color: #1a1a1a;
 }
-.myButton:active {
-	position:relative;
-	top:1px;
-}
+
        
 aside ul {
 	color: white;
