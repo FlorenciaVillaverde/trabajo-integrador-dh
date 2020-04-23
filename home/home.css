@@ -58,7 +58,8 @@ img{
 	width: 100%;
 }
 
-/* como hacer que quede la mitad y scrollear a la derecha las imagenes y que seria carrousel*/
+/* como hacer que quede la mitad y scrollear a la derecha las imagenes y que seria carrousel
+como hacer para que las imagenes tengan el mismo tamaño*/
 
 .tracks{
 	display: grid;
