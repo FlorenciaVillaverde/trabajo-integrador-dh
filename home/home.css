@@ -112,27 +112,19 @@ footer{
 		display: grid;
 		grid-template-columns: 5% 50% 20% ;
 		justify-content: space-around;
-		height: 100px;
-		margin-top: 15%;
-		padding-top: 15%;
+		margin-top: 12%;
+		padding: 5%;
 	}
 	
-
-
 .integrantes{
 	color: black;
-	text-align: center;
-
-	
+	text-align: center;	
 }
-footer ul{
-	
+footer i {
+	margin: auto;
 }
-
-
 .logo{
 	width: 100%;
-
 }
 
 
