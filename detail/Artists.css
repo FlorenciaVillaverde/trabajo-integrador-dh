@@ -46,6 +46,7 @@ table {
 
 body{
 	background-color: #1a1a1a;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #foto-perfil{
@@ -54,6 +55,11 @@ body{
 	/* HACER DEGRADE*/
 }
 
+.follow{
+	display: grid;
+	grid-template-columns: 45% 45%;
+	justify-content: center;
+}
 button {
 	background-color:transparent;
 	border-radius:28px;
@@ -97,14 +103,19 @@ div ul li a{
 }
 
 
-main ol{
+main section{
 	display: grid;
 	grid-template-columns:90% 5%;
-	justify-content: space-between;
+	justify-content: center;
 
+	margin-top: 20px;
 }
 
-main ol li a {
+main section article i{
+	color: white;
+}
+
+main section article a {
 	font-size: medium;
 	color: white;
 	padding: 5%;
@@ -118,3 +129,4 @@ main ol li{
 ol{
 	color: azure ;
 }
+
