@@ -29,9 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -60,6 +58,26 @@ img{
 
 /* como hacer que quede la mitad y scrollear a la derecha las imagenes y que seria carrousel
 como hacer para que las imagenes tengan el mismo tamaño*/
+
+header{
+	background-color:#1a1a1a;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5%;
+
+	
+	display: grid;
+	grid-template-columns: 20% 50% 20%;
+	justify-content: space-around;
+}
+header i{
+	 margin: auto;
+	 color: azure;
+}
+header div{
+	margin: auto;
+	color: azure;
+}
 
 .tracks{
 	display: grid;
