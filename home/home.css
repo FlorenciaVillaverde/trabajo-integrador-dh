@@ -60,10 +60,11 @@ img{
 como hacer para que las imagenes tengan el mismo tamaño*/
 
 header{
-	background-color:#1a1a1a;
+	background-color:red;
 	width: 100%;
 	height: 50px;
 	margin-bottom: 5%;
+	position: fixed;
 
 	
 	display: grid;
@@ -79,6 +80,9 @@ header div{
 	color: azure;
 }
 
+main{
+	padding-top: 20%;
+}
 .tracks{
 	display: grid;
 	grid-template-columns: 20% 20% 20% 20% ;

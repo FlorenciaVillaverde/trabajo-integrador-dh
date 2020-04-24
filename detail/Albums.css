@@ -76,27 +76,31 @@ div h2{
 div h2 a{
 	color: gray;
 }
-main{
+
+
+main section{
 	display: grid;
 	grid-template-columns: 5% 80% 5%;
-	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-	justify-content: space-between;
+	justify-content: center;
 
+	margin-top: 5%;
 }
-main ul li a {
+
+main article a {
 	font-size: medium;
 	color: white;
 	text-decoration: none;
-	padding: 5%;
+}
+main article{
+	margin-bottom: 3%;
+	margin-top: 3%;
+	padding-left: 5%;
+}
 
-}
-main ul li{
-	margin-top: 5%;
-}
-main ul li h4{
+main article h4{
 	color: gray;
 	font-size: x-small;
-	padding-left: 5%;
+	
 	margin-top: 1%;
 }
 /* Agregar lineas divisoras entre
@@ -111,6 +115,13 @@ aside ul {
 	grid-template-columns: 20% 75% ;
 	justify-content: space-around;
 }
+
+main .iconos {
+	margin: auto;
+	color: azure;
+}
+
+
 aside{
 	margin-top: 5%;
 }
