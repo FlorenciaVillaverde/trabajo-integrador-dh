@@ -143,8 +143,9 @@ footer{
 	color: black;
 	text-align: center;	
 }
-footer i {
+footer a {
 	margin: auto;
+	color: black;
 }
 .logo{
 	width: 100%;
