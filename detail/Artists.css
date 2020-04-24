@@ -96,10 +96,10 @@ div ul li a{
 	color: grey;
 }
 
-main{
+
+main ol{
 	display: grid;
 	grid-template-columns:90% 5%;
-	grid-template-rows: 50px 50px 50px 50px 50px;
 	justify-content: space-between;
 
 }
