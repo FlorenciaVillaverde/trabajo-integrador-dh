@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="../reset.css">
     <title>Home</title>
+
+
+    
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../ui-kit/css/uikit.min.css" />
+    <link rel="stylesheet" href="home.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <i class="fas fa-grip-lines"></i>
-        <div>
-            LOGO
-        </div>
-        <i class="fas fa-search"></i>
 
+    <header>
+        <section>
+        <article>
+        <a href="#offcanvas-usage" uk-toggle>
+            <i class="fas fa-grip-lines"></i></a>
+
+            <div id="offcanvas-usage" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+                <ul>
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="../playlist/playlist.html"> PLAYLISTS</a>
+                    </li>
+
+                    <li>
+                        <a href="../detail/Genero.html">GENERO</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <!-- Agregar lupita cuando sepamos hacerla y animacion del menu hamburguesa 
+            Cambiar color de las letras y fondo gris
+            -->
+        </article>
+        
+        <article>
+            LOGO
+        </article>
+
+        <article>
+            <i class="fas fa-search"></i>
+        </article>
+</section>
     </header>
     
     <main>
@@ -123,4 +161,8 @@
             <img class="logo" src="../images/logo-deezer.png" alt="Logo Deezer">
     </footer>
 </body>
+
+    <script src="../ui-kit/js/uikit.min.js"></script>
+    <script src="../ui-kit/js/uikit-icons.min.js"></script>
+
 </html>
