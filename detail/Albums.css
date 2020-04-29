@@ -87,3 +87,40 @@ aside div{
 aside ul div li a{
     color: azure;
 }
+
+footer section{
+	background-color: white;
+	display: grid;
+	grid-template-columns: 30% 30% 30% ;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+
+article p{
+color: black;
+text-align: center;
+}
+/*	border-right: 1px solid black;
+padding-left : 5%;
+font-size: small;
+
+}
+
+#ultimo{
+border-right: none;
+}
+*/
+
+footer section article {
+margin: auto;
+}
+
+footer section article a{
+color: black;
+}
+
+.logo{
+width: 100%;
+margin: auto;
+}
+
