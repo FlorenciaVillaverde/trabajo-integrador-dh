@@ -1,0 +1,29 @@
+/* HEADER */
+header section{
+	background-color:purple;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5%;
+	margin-top: 0%;
+    position: relative;
+    /* Hacerlo fijo*/
+	
+	display: grid;
+	grid-template-columns: 20% 50% 20%;
+	justify-content: space-around;
+}
+
+header i{
+	margin: auto;
+	color: azure;
+}
+
+header article{
+	margin: auto;
+	color: azure;
+}
+
+header section article ul li{
+	margin-bottom: 10%;
+	font-size: 20px;
+}

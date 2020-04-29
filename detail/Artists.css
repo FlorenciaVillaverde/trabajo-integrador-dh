@@ -1,5 +1,8 @@
 /*habiamos borrado del reset la OL y LI*/
 
+header section{
+	margin-bottom: 0%;
+} /* lo pusimos por la foto del artista*/
 body{
 	background-color: #1a1a1a;
 	font-family: Arial, Helvetica, sans-serif;
