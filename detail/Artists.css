@@ -1,5 +1,8 @@
 /*habiamos borrado del reset la OL y LI*/
 
+header section{
+	margin-bottom: 0%;
+} /* lo pusimos por la foto del artista*/
 body{
 	background-color: #1a1a1a;
 	font-family: Arial, Helvetica, sans-serif;
@@ -85,4 +88,41 @@ main ol li{
 ol{
 	color: azure ;
 }
+
+footer section{
+	background-color: white;
+	display: grid;
+	grid-template-columns: 30% 30% 30% ;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+
+article p{
+color: black;
+text-align: center;
+}
+/*	border-right: 1px solid black;
+padding-left : 5%;
+font-size: small;
+
+}
+
+#ultimo{
+border-right: none;
+}
+*/
+
+footer section article {
+margin: auto;
+}
+
+footer section article a{
+color: black;
+}
+
+.logo{
+width: 100%;
+margin: auto;
+}
+
 

@@ -5,16 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../ui-kit/css/uikit.min.css" />
+
     <link rel="stylesheet" href="Tracks.css">
+    <link rel="stylesheet" href="../header.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
    
     <title>Tracks</title>
 </head>
 <body>
-<div class="container">
-    <header>
-    <!-- AGREGAR HEADER-->
-    </header>
 
+
+    <header>
+        <!-- cruz movida  -->
+        <section>
+            <article>
+                <a href="#offcanvas-usage" uk-toggle>
+                    <i class="fas fa-grip-lines"></i>
+                </a>
+
+                <div id="offcanvas-usage" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+            
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+            
+                        <ul>
+                            <li>
+                                <a href="../home/home.html">HOME</a>
+                            </li>
+
+                            <li>
+                                <a href="../playlist/playlist.html"> PLAYLISTS</a>
+                            </li>
+
+                            <li>
+                                <a href="Genero.html">GENERO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Agregar lupita cuando sepamos hacerla y animacion del menu hamburguesa 
+                Cambiar color de las letras y fondo gris
+                -->
+            </article>
+            
+            <article>
+                LOGO
+            </article>
+
+            <article>
+                <i class="fas fa-search"></i>
+            </article>
+        </section>
+    </header>
     <!--
     Track:
     Nombre y foto track :)
@@ -32,18 +76,54 @@
     <div>
         <button type="button">Agregar a Playlist</button>
     </div>
-    
+
     <aside>
         <ul>
             <li>19 de Marzo 2020</li>
             <li>2 min 31 s</li>
             <li>Genero - <a href="Genero.html">Latino</a></li>
         </ul>
-   </aside>
+    </aside>
 
-   <footer>
-    <!-- AGREGAR FOOTER-->
-   </footer>
-</div>
+    <footer>
+        <section>
+            <article>
+                <a href="https://github.com/FlorenciaVillaverde/trabajo-integrador-dh"> <i class="fab fa-github"></i>
+                </a>
+            </article> 
+
+            <article>
+                <a href="https://github.com/FlorenciaVillaverde/trabajo-integrador-dh"> <i class="fab fa-github"></i>
+                </a>
+            </article>
+
+            <article>
+                <img class="logo" src="../images/logo-deezer.png" alt="Logo Deezer">
+            </article>
+
+            <article>
+                <p>
+                    Flor Villaverde 
+                </p>
+            </article>
+
+            <article>
+                <p>
+                    Nacho Salaya 
+                </p>
+            </article>
+
+            <article>
+                <p id="ultimo">
+                    Nico Serena
+                </p>
+            </article>
+
+        </section> 
+    </footer>
+
+
 </body>
+    <script src="../ui-kit/js/uikit.min.js"></script>
+    <script src="../ui-kit/js/uikit-icons.min.js"></script>
 </html>

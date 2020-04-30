@@ -1,12 +1,7 @@
 body{
     background-color: #1a1a1a;
 }
-header{
-	background-color: aliceblue;
-	width: 100%;
-	height: 100px;
-	display: none;
-}
+
 
 #foto-previa{
 	width: 50%;
@@ -23,6 +18,7 @@ div h2{
 	font-size: x-large;
 	margin-top:5%;
 }
+
 div ul li{
 	text-align: center;
 	text-decoration: none;
@@ -30,10 +26,10 @@ div ul li{
 	font-size: small;
 	margin-top: 3%;
 }
+
 div ul li a{
 	color: gray;
 }
-
 
 main ul li a {
 	font-size: medium;
@@ -50,9 +46,46 @@ main{
 main ul li{
 	margin-top: 5%;
 }
+
 main ul li h4{
 	color: gray;
 	font-size: x-small;
 	padding-left: 5%;
 	margin-top: 1%;
+}
+
+footer section{
+	background-color: white;
+	display: grid;
+	grid-template-columns: 30% 30% 30% ;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+
+article p{
+color: black;
+text-align: center;
+}
+/*	border-right: 1px solid black;
+padding-left : 5%;
+font-size: small;
+
+}
+
+#ultimo{
+border-right: none;
+}
+*/
+
+footer section article {
+margin: auto;
+}
+
+footer section article a{
+color: black;
+}
+
+.logo{
+width: 100%;
+margin: auto;
 }
