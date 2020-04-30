@@ -5,7 +5,6 @@ body{
 
 #foto-album{
 	width: 50%;
-	/*hacer la imagen cuadrada y que no quede crota*/
 	margin: 0 auto;
 	margin-top: 10%;
     display: block;
@@ -76,10 +75,11 @@ main .iconos {
 aside{
 	margin-top: 5%;
 }
+
 aside img{
 	width: 100%;
-	/*hacer la imagen redonda y que no quede crota*/
 }
+
 aside div{
 	margin-top: 3%;
 	margin-bottom: 3%;
@@ -141,12 +141,13 @@ font-size: 32px;
 
 div h2{
 	text-align: left;
+	margin-top: -1%;
 
 }
 
 #foto-album{
-	width: 232px;
-	height: 232px;
+	width: 100%;
+
 }
 
 main section{
@@ -159,11 +160,11 @@ main section{
 }
 
 aside ul li img{
-
+	border-radius: 50%;
 }
 
 aside ul  {
-	font-size: larger;
+	font-size: 16px;
 }
 
 
