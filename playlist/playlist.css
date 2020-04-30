@@ -25,21 +25,22 @@ h3{
 	margin-top: 3%;
 }
 
-
+main ul li{
+	display:block;
+}
 
 main ul li a {
 	font-size: medium;
 	color: white;
 	text-decoration: none;
 	padding: 5%;
-
 }
 
 main{
 	margin-top: 10%;
 }
 
-main ul li h4{
+.artista{
 	color: gray;
 	font-size: x-small;
 	padding-left: 5%;
@@ -106,9 +107,17 @@ h3{
 main ul li{
 	padding-top: 2%;
 	border-top: 1px solid dimgray;
+
+	display: grid;
+	grid-template-columns: 60% 35% ;
+	justify-content: space-between;
+	width: 100%;
 }
 
-
+main ul li a {
+	padding: 0%;
+	padding-left: 2%;
+}
 
 .ultimo{
 	border-bottom: 1px solid dimgray;
@@ -117,4 +126,6 @@ main ul li{
 ul{
 	padding-left: 0px;
 }
+
+
 }
