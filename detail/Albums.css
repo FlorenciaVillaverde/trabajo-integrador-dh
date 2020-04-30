@@ -76,10 +76,12 @@ main .iconos {
 aside{
 	margin-top: 5%;
 }
+
 aside img{
 	width: 100%;
-	/*hacer la imagen redonda y que no quede crota*/
+	border-radius: 50%;
 }
+
 aside div{
 	margin-top: 3%;
 	margin-bottom: 3%;
@@ -101,16 +103,6 @@ article p{
 color: black;
 text-align: center;
 }
-/*	border-right: 1px solid black;
-padding-left : 5%;
-font-size: small;
-
-}
-
-#ultimo{
-border-right: none;
-}
-*/
 
 footer section article {
 margin: auto;
@@ -135,8 +127,8 @@ margin: auto;
 }
 
 div h1{
-text-align: left;
-font-size: 32px;
+	text-align: left;
+	font-size: 32px;
 }
 
 div h2{
@@ -155,10 +147,6 @@ main section{
 
 .ultimo{
 	border-bottom: 1px solid dimgray;
-}
-
-aside ul li img{
-
 }
 
 aside ul  {

@@ -75,16 +75,6 @@ article p{
 color: black;
 text-align: center;
 }
-/*	border-right: 1px solid black;
-padding-left : 5%;
-font-size: small;
-
-}
-
-#ultimo{
-border-right: none;
-}
-*/
 
 footer section article {
 margin: auto;
@@ -98,6 +88,8 @@ color: black;
 width: 100%;
 margin: auto;
 }
+
+
 @media (min-width: 768px) {
 
 	.titulo{
