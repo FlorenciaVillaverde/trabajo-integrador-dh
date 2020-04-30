@@ -97,4 +97,24 @@ color: black;
 width: 100%;
 margin: auto;
 }
+@media (min-width: 768px) {
 
+	.titulo{
+		display: grid;
+		grid-template-columns: 20% 70%;
+		justify-content: space-around;
+	}
+	
+	div h1{
+	text-align: left;
+	font-size: 32px;
+	}
+	
+	div h2{
+		text-align: left;
+	
+	}
+	#foto-cancion {
+	width: 100%;
+	}
+}
