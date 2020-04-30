@@ -49,3 +49,26 @@ aside{
     margin-left: 5%;
     margin-top: 10%;
 }
+@media (min-width: 420px) {
+    section{
+        display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    margin-top: 25%;
+    
+    }
+    #foto-genero{
+        width: 50%;
+       margin-left: 5%;
+        margin-top: 8%;
+        position: absolute;
+        border: 1px solid white;
+    }
+    div h1{
+        text-align: right ;
+        color: azure;
+        font-size: x-large;
+        padding-top: 23%;
+        padding-right: 35%;
+    }
+}
