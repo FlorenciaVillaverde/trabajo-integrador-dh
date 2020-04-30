@@ -14,11 +14,12 @@ body{
 	/* HACER DEGRADE*/
 }
 
-.follow{
+.detalle{
 	display: grid;
 	grid-template-columns: 45% 45%;
 	justify-content: center;
 }
+
 button {
 	background-color:transparent;
 	border-radius:28px;
@@ -46,6 +47,10 @@ div b{
 	left: 10px;
 	color: azure;
 	font-size: 50px;
+}
+
+.error-desktop {
+	display: none;
 }
 
 div ul li{
@@ -126,3 +131,48 @@ margin: auto;
 }
 
 
+
+@media (min-width: 768px){
+
+	.titulo-desktop{
+		display: grid;
+		grid-template-columns: 20% 70%;
+		justify-content: space-around;
+
+		margin-top: 5%;
+	}
+
+	div b{
+		display: none;
+		position: relative;
+	}
+
+	.error-desktop {
+		display: block;
+		font-size: 40px;
+	}
+
+
+	.detalle{
+		display: block;
+		margin-left: -80%;
+	}
+
+	div ul li{
+		margin-top: 1%;
+	}
+
+	main section{
+		border-top: 1px solid dimgray;
+
+	}
+
+	main section article{
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	
+	.ultimo{
+		border-bottom: 1px solid dimgray;
+	}
+}

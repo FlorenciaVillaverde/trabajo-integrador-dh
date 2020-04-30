@@ -4,7 +4,6 @@ body{
 
 #foto-genero{
 	width: 50%;
-	/*hacer la imagen cuadrada y que no quede crota*/
 	margin: 0 auto;
 	margin-top: 10%;
     display: block;
@@ -25,7 +24,7 @@ section{
     margin-top: 10%;
 }
 
-section img{
+main section img{
     width: 100%;
     border-radius: 50%;
 }
@@ -86,25 +85,33 @@ color: black;
 width: 100%;
 margin: auto;
 }
-@media (min-width: 420px) {
+
+
+@media (min-width: 768px) {
+
+    .titulo-desktop{
+        display: grid;
+        grid-template-columns: 20% 70%;
+        justify-content: space-around;
+    }
+    
+    div h1{
+        text-align: left;
+        font-size: 50px;
+        
+    }
+
     section{
         display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    justify-content: space-around;
-    margin-top: 25%;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: space-around;
     
     }
+
     #foto-genero{
-        width: 50%;
-       margin-left: 5%;
-        margin-top: 8%;
-        position: absolute;
+        width: 100%;
+        margin-top: 0%;
         border: 1px solid white;
     }
-    div h1{
-        text-align: right ;
-        color: azure;
-        font-size: x-large;
-        padding-top: 23%;
-        padding-right: 35%;
-    }
+
+} 
