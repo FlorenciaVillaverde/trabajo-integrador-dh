@@ -12,6 +12,9 @@ header section{
 	grid-template-columns: 20% 50% 20%;
 	justify-content: space-around;
 }
+.titulos{
+	display: none;
+}
 
 header i{
 	margin: auto;
@@ -26,4 +29,36 @@ header article{
 header section article ul li{
 	margin-bottom: 10%;
 	font-size: 20px;
+}
+
+
+@media (min-width: 768px){
+
+.menu{
+	display: none;
+}
+
+.titulos{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-around;
+
+
+}
+.titulos a{
+	color: azure;
+	text-align: left;
+}
+
+header section{
+	grid-template-columns: 10% 70% 10%;
+	
+
+
+}
+
+header article{
+	margin: 0;
+}
+
 }
