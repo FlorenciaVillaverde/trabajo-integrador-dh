@@ -12,24 +12,21 @@ body{
     border: 1px solid white;
 }
 
-div h2{
+h2{
     text-align: center;
 	color: azure;
 	font-size: x-large;
 	margin-top:5%;
 }
 
-div ul li{
+h3{
 	text-align: center;
-	text-decoration: none;
 	color: gray;
 	font-size: small;
 	margin-top: 3%;
 }
 
-div ul li a{
-	color: gray;
-}
+
 
 main ul li a {
 	font-size: medium;
@@ -41,10 +38,6 @@ main ul li a {
 
 main{
 	margin-top: 10%;
-}
-
-main ul li{
-	margin-top: 5%;
 }
 
 main ul li h4{
@@ -88,4 +81,41 @@ color: black;
 .logo{
 width: 100%;
 margin: auto;
+}
+
+@media (min-width: 768px){
+
+.titulo{
+	display: grid;
+	grid-template-columns: 25% 70%;
+	justify-content: space-around;
+
+}
+#foto-previa{
+	width: 100%;
+}
+
+h2{
+	text-align: left;
+}
+
+h3{
+	text-align: left;
+	margin-top: -1%;
+}
+
+main ul li{
+	padding-top: 2%;
+	border-top: 1px solid dimgray;
+}
+
+
+
+.ultimo{
+	border-bottom: 1px solid dimgray;
+}
+
+ul{
+	padding-left: 0px;
+}
 }
