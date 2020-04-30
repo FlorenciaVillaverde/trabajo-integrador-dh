@@ -31,8 +31,8 @@ div h2 a{
 	color: gray;
 }
 
-button {
-	width: 70%;
+.add-playlist{
+	width: 30%;
 	height: 50px;
 	background-color:transparent;
 	border-radius:28px;
@@ -46,6 +46,7 @@ button {
 	margin-top: 10%;
     display: block;
 }
+
 button:hover {
 	background-color:white;
 	color: #1a1a1a;
@@ -104,17 +105,33 @@ margin: auto;
 		grid-template-columns: 20% 70%;
 		justify-content: space-around;
 	}
-	
+
+	#foto-cancion {
+	width: 100%;
+	}
+
 	div h1{
-	text-align: left;
-	font-size: 32px;
+		text-align: left;
+		font-size: 32px;
 	}
 	
 	div h2{
 		text-align: left;
-	
 	}
-	#foto-cancion {
-	width: 100%;
+
+	div button {
+		margin-left: 0%;
+	}
+
+	aside {
+		text-align: left;
+		margin-top: 5%;
+	}
+
+	.add-playlist{
+		width: 20%;
+		margin: 0;
+		margin-top: 5%;
+		margin-left: -3%;
 	}
 }
