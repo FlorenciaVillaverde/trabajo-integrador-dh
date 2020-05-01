@@ -32,7 +32,7 @@ div h2 a{
 }
 
 .add-playlist{
-	width: 30%;
+	width: 40%;
 	height: 50px;
 	background-color:transparent;
 	border-radius:28px;
@@ -44,8 +44,9 @@ div h2 a{
 	text-decoration:none;
 	margin: 0 auto;
 	margin-top: 10%;
-    display: block;
+	display: block;
 }
+
 
 button:hover {
 	background-color:white;
@@ -58,6 +59,11 @@ aside ul {
 	padding-left: 5%;
 	font-size: small;
 }
+
+aside ul li a {
+	color: azure
+}
+
 aside{
 text-align: center;
 margin-top: 10%;
@@ -129,6 +135,7 @@ margin: auto;
 
 	footer section{
 		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+		margin-top: 100px;
 	}
 
 	footer section article p{
