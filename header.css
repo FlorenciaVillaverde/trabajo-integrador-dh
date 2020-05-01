@@ -40,25 +40,27 @@ header section article ul li{
 
 .titulos{
 	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	justify-content: space-around;
-
-
+	grid-template-columns: 10% 15% 15%;
+	padding: 12px 0px;
 }
+
 .titulos a{
 	color: azure;
 	text-align: left;
 }
 
-header section{
-	grid-template-columns: 10% 70% 10%;
 	
-
-
+header section{
+	grid-template-columns: 5% 60% 20%;
 }
 
 header article{
 	margin: 0;
+}
+
+.lupita{
+	padding-left: 90%;
+	margin-top: 10px;
 }
 
 }
