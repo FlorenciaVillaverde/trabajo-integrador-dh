@@ -1,11 +1,10 @@
-/*habiamos borrado del reset la OL y LI*/
-
 header section{
 	margin-bottom: 0px;
 } /* lo pusimos por la foto del artista*/
+
 body{
 	background-color: #1a1a1a;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 #foto-perfil{
@@ -26,6 +25,7 @@ button {
 	margin: 0 auto;
     display: block;
 }
+
 button:hover {
 	background-color:white;
 	color: #1a1a1a;
@@ -36,6 +36,8 @@ button:hover {
 }
 
 div b{
+	font-family: 'Nunito Sans', sans-serif;
+	
 	position: absolute;
 	bottom: 0;
 	left: 10px;
@@ -60,7 +62,6 @@ div ul li a{
 	color: grey;
 }
 
-
 main section{
 	display: grid;
 	grid-template-columns:90% 5%;
@@ -80,7 +81,6 @@ main section article a {
 
 }
 
-
 ol{
 	color: azure ;
 }
@@ -94,8 +94,8 @@ footer section{
 }
 
 article p{
-color: black;
-text-align: center;
+	color: black;
+	text-align: center;
 }
 /*	border-right: 1px solid black;
 padding-left : 5%;
@@ -109,16 +109,16 @@ border-right: none;
 */
 
 footer section article {
-margin: auto;
+	margin: auto;
 }
 
 footer section article a{
-color: black;
+	color: black;
 }
 
 .logo{
-width: 100%;
-margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 

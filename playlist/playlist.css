@@ -1,5 +1,6 @@
 body{
-    background-color: #1a1a1a;
+	background-color: #1a1a1a;
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -57,8 +58,8 @@ footer section{
 }
 
 article p{
-color: black;
-text-align: center;
+	color: black;
+	text-align: center;
 }
 /*	border-right: 1px solid black;
 padding-left : 5%;
@@ -72,16 +73,16 @@ border-right: none;
 */
 
 footer section article {
-margin: auto;
+	margin: auto;
 }
 
 footer section article a{
-color: black;
+	color: black;
 }
 
 .logo{
-width: 100%;
-margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 @media (min-width: 768px){

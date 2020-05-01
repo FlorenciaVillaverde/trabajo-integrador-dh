@@ -1,28 +1,30 @@
 body{
 	background: #1a1a1a;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 #foto-album{
 	width: 50%;
-	/*hacer la imagen cuadrada y que no quede crota*/
 	margin: 0 auto;
 	margin-top: 60px;
     display: block;
     border: 1px solid white;
 }
+
 div h1{
 	text-align: center;
 	color: azure;
 	font-size: x-large;
 	margin-top:30px;
 }
+
 div h2{
 	text-align: center;
 	color: gray;
 	font-size: small;
 	margin-top: 10px;
 }
+
 div h2 a{
 	color: gray;
 }
@@ -53,8 +55,6 @@ main article h4{
 	
 	margin: 5px 0px 20px ;
 }
-/* Agregar lineas divisoras entre
- canciones cuando sea tablet/dec */
 
 aside ul {
 	color: white;
@@ -70,7 +70,6 @@ main .iconos {
 	margin: auto;
 	color: azure;
 }
-
 
 aside{
 	margin-top: 25px;
@@ -98,21 +97,21 @@ footer section{
 }
 
 article p{
-color: black;
-text-align: center;
+	color: black;
+	text-align: center;
 }
 
 footer section article {
-margin: auto;
+	margin: auto;
 }
 
 footer section article a{
-color: black;
+	color: black;
 }
 
 .logo{
-width: 100%;
-margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 
