@@ -104,4 +104,11 @@ margin: auto;
         border: 1px solid white;
     }
 
+    footer section{
+		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+	}
+
+	footer section article p{
+		margin: 0;
+	}
 } 

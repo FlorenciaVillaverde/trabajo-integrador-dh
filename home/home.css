@@ -2,7 +2,6 @@ body{
     background-color:#1a1a1a;
 }
 
-
 img{
 	width: 100%;
 }
@@ -37,30 +36,20 @@ h3{
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 	margin-left: 20px;
-	}
+}
 
 footer section{
-		background-color: white;
-		display: grid;
-		grid-template-columns: 30% 30% 30% ;
-		justify-content: space-around;
-		margin-top: 10%;
-	}
+	background-color: white;
+	display: grid;
+	grid-template-columns: 30% 30% 30% ;
+	justify-content: space-around;
+	margin-top: 10%;
+}
 	
 article p{
 	color: black;
 	text-align: center;
 }
-/*	border-right: 1px solid black;
-	padding-left : 5%;
-	font-size: small;
-
-}
-
-#ultimo{
-	border-right: none;
-}
-*/
 
 footer section article {
 	margin: auto;
@@ -82,7 +71,7 @@ footer section article a{
 
 /* DESKTOP*/
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
 
 	main div div ul li {
 		margin-right: 0%;
@@ -97,5 +86,15 @@ footer section article a{
 	h3{
 		margin-left: 35px;
 	}
+
+	footer section{
+		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+	}
+
+	footer section article p{
+		margin: 0;
+	}
+
+
 }
 

@@ -127,4 +127,12 @@ margin: auto;
 		margin-left: -3%;
 	}
 
+	footer section{
+		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+	}
+
+	footer section article p{
+		margin: 0;
+	}
+
 }

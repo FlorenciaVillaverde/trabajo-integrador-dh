@@ -120,42 +120,45 @@ margin: auto;
 
 @media (min-width: 768px){
 
-.album{
-	display: grid;
-	grid-template-columns: 20% 70%;
-	justify-content: space-around;
-}
+	.album{
+		display: grid;
+		grid-template-columns: 20% 70%;
+		justify-content: space-around;
+	}
 
-div h1{
-	text-align: left;
-	font-size: 32px;
-}
+	div h1{
+		text-align: left;
+		font-size: 32px;
+	}
 
-div h2{
-	text-align: left;
+	div h2{
+		text-align: left;
 
-}
+	}
 
-#foto-album{
-	width: 100%;
-}
+	#foto-album{
+		width: 100%;
+	}
 
-main section{
-	border-top: 1px solid dimgray;
+	main section{
+		border-top: 1px solid dimgray;
 
-}
+	}
 
-.ultimo{
-	border-bottom: 1px solid dimgray;
-}
+	.ultimo{
+		border-bottom: 1px solid dimgray;
+	}
 
-aside ul  {
-	font-size: larger;
-}
+	aside ul  {
+		font-size: larger;
+	}
 
+	footer section{
+		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+	}
 
-
-
-
+	footer section article p{
+		margin: 0;
+	}
 
 }
