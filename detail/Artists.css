@@ -1,7 +1,7 @@
 /*habiamos borrado del reset la OL y LI*/
 
 header section{
-	margin-bottom: 0%;
+	margin-bottom: 0px;
 } /* lo pusimos por la foto del artista*/
 body{
 	background-color: #1a1a1a;
@@ -51,7 +51,7 @@ div ul.detalle li{
 	text-align: center;
 	color: gray;
 	font-size: small;
-	margin-top: 3%;
+	margin-top: 15px;
 	
 }
 
@@ -80,9 +80,6 @@ main section article a {
 
 }
 
-main ol li{
-	margin-top: 5%;
-}
 
 ol{
 	color: azure ;
@@ -93,7 +90,7 @@ footer section{
 	display: grid;
 	grid-template-columns: 30% 30% 30% ;
 	justify-content: space-around;
-	margin-top: 10%;
+	margin-top: 60px;
 }
 
 article p{
@@ -136,7 +133,7 @@ margin: auto;
 		grid-template-columns: 20% 70%;
 		justify-content: space-around;
 
-		margin-top: 5%;
+		margin-top: 50px;
 	}
 
 	div b{
@@ -151,11 +148,11 @@ margin: auto;
 
 	.detalle{
 		display: block;
-		margin-left: -80%;
+		margin-right: 73%;
 	}
 
-	div ul li{
-		margin-top: 1%;
+	div ul.detalle li{
+		margin-top: 0px;
 	}
 
 	main{
