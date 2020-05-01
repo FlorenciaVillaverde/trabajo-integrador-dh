@@ -7,7 +7,7 @@ body{
 	width: 50%;
 	/*hacer la imagen cuadrada y que no quede crota*/
 	margin: 0 auto;
-	margin-top: 10%;
+	margin-top: 60px;
     display: block;
     border: 1px solid white;
 }
@@ -15,20 +15,20 @@ div h1{
 	text-align: center;
 	color: azure;
 	font-size: x-large;
-	margin-top:5%;
+	margin-top:30px;
 }
 div h2{
 	text-align: center;
 	color: gray;
 	font-size: small;
-	margin-top: 3%;
+	margin-top: 10px;
 }
 div h2 a{
 	color: gray;
 }
 
 main{
-	margin-top: 5%;
+	margin-top: 30px;
 }
 
 main section{
@@ -43,8 +43,7 @@ main article a {
 	text-decoration: none;
 }
 main article{
-	margin-bottom: 3%;
-	margin-top: 3%;
+	margin: 15px 0%;
 	padding-left: 5%;
 }
 
@@ -52,7 +51,7 @@ main article h4{
 	color: gray;
 	font-size: x-small;
 	
-	margin-top: 1%;
+	margin: 5px 0px 20px ;
 }
 /* Agregar lineas divisoras entre
  canciones cuando sea tablet/dec */
@@ -74,7 +73,7 @@ main .iconos {
 
 
 aside{
-	margin-top: 5%;
+	margin-top: 25px;
 }
 
 aside img{
@@ -83,8 +82,7 @@ aside img{
 }
 
 aside div{
-	margin-top: 3%;
-	margin-bottom: 3%;
+	margin: 24px 0px;
 }
 
 aside ul div li a{
@@ -129,6 +127,7 @@ margin: auto;
 	div h1{
 		text-align: left;
 		font-size: 32px;
+		margin-top: 0px;
 	}
 
 	div h2{
@@ -138,6 +137,11 @@ margin: auto;
 
 	#foto-album{
 		width: 100%;
+		margin-top: 0px;
+	}
+
+	main{
+		margin-top: 60px;
 	}
 
 	main section{
