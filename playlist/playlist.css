@@ -42,9 +42,11 @@ main{
 
 .artista{
 	color: gray;
-	font-size: x-small;
-	padding-left: 5%;
-	margin-top: 1%;
+	font-size: small;	
+}
+
+h4{
+	margin-top: 0px;
 }
 
 footer section{
