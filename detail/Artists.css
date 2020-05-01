@@ -14,12 +14,6 @@ body{
 	/* HACER DEGRADE*/
 }
 
-.detalle{
-	display: grid;
-	grid-template-columns: 45% 45%;
-	justify-content: center;
-}
-
 button {
 	background-color:transparent;
 	border-radius:28px;
