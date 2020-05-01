@@ -8,9 +8,8 @@ body{
 }
 #foto-cancion{
 	width: 50%;
-	/*hacer la imagen cuadrada y que no quede crota*/
 	margin: 0 auto;
-	margin-top: 10%;
+	margin-top: 50px;
     display: block;
     border: 1px solid white;
 }
@@ -19,14 +18,16 @@ div h1{
 	text-align: center;
 	color: azure;
 	font-size: x-large;
-	margin-top:5%;
+	margin-top: 50px;
 }
+
 div h2{
 	text-align: center;
 	color: gray;
 	font-size: small;
-	margin-top: 3%;
+	margin-top: 20px;
 }
+
 div h2 a{
 	color: gray;
 }
@@ -43,7 +44,7 @@ div h2 a{
 	padding:16px 31px;
 	text-decoration:none;
 	margin: 0 auto;
-	margin-top: 10%;
+	margin-top: 30px;
 	display: block;
 }
 
@@ -65,8 +66,8 @@ aside ul li a {
 }
 
 aside{
-text-align: center;
-margin-top: 10%;
+	text-align: center;
+	margin-top: 30px;
 }
 
 aside img{
@@ -82,21 +83,21 @@ footer section{
 }
 
 article p{
-color: black;
-text-align: center;
+	color: black;
+	text-align: center;
 }
 
 footer section article {
-margin: auto;
+	margin: auto;
 }
 
 footer section article a{
-color: black;
+	color: black;
 }
 
 .logo{
-width: 100%;
-margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 
@@ -127,7 +128,7 @@ margin: auto;
 
 	aside {
 		text-align: left;
-		margin-top: 5%;
+		margin-top: 50px;
 	}
 
 	aside img{
@@ -140,7 +141,7 @@ margin: auto;
 	.add-playlist{
 		width: 20%;
 		margin: 0;
-		margin-top: 5%;
+		margin-top: 50px;
 		margin-left: -3%;
 	}
 
