@@ -142,7 +142,12 @@ margin: auto;
 
 	main section{
 		border-top: 1px solid dimgray;
+	}
 
+	main section article{
+		display: grid;
+		grid-template-columns: 40% 40% ;
+		justify-content: space-between;
 	}
 
 	.ultimo{
