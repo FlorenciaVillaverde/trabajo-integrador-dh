@@ -3,15 +3,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-#foto-genero{
-	width: 50%;
-	margin: 0 auto;
-	margin-top: 50px;
-    display: block;
-    border: 1px solid white;
-}
-
-div h1{
+div h1{ /*titulo genero?*/
 	text-align: center;
 	color: azure;
 	font-size: x-large;
@@ -29,28 +21,13 @@ main section img{
     width: 100%;
     border-radius: 50%;
 }
+
 article{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-aside h3{
-    color: azure;
-    font-size: xx-large;
-    
-}
-
-aside p{
-    color: azure;
-}
-
-aside{
-    margin-left: 5%;
-    margin-top: 40px;
-    margin-right: 5%;
-}
-
-
+/*FOOTER*/
 footer section{
     background-color: white;
     display: grid;
@@ -80,13 +57,7 @@ margin: auto;
 
 @media (min-width: 768px) {
 
-    .titulo-desktop{
-        display: grid;
-        grid-template-columns: 20% 70%;
-        justify-content: space-around;
-    }
-    
-    div h1{
+    div h1{ /*titulo genero?*/
         text-align: left;
         font-size: 50px;
         
@@ -99,12 +70,7 @@ margin: auto;
     
     }
 
-    #foto-genero{
-        width: 100%;
-        margin-top: 0;
-        border: 1px solid white;
-    }
-
+    /*FOOTER*/
     footer section{
 		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
 	}

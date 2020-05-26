@@ -10,7 +10,7 @@ img{
 main div div ul li {
 	margin-right: 5%;
 	padding-left: 5%;
-}
+} /*no funciona si le ponemos .tops */
 
 .uk-dotnav {
 	display: none;
@@ -77,7 +77,7 @@ footer section article a{
 	main div div ul li {
 		margin-right: 0%;
 		padding-left: 3%;
-	}
+	}/*no funciona si le ponemos .tops */
 	
 	.uk-dotnav {
 		display: flex;

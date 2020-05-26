@@ -6,20 +6,21 @@
     <title>Home</title>
 
     
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../ui-kit/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="ui-kit/css/uikit.min.css" />
 
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/header.css">
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <section>
-            <article class="menu">
+        <nav class="contenedor"> 
+            <nav class="menu">
                 <a href="#offcanvas-usage" uk-toggle>
                     <i class="fas fa-grip-lines"></i>
                 </a>
@@ -31,63 +32,63 @@
             
                         <ul>
                             <li>
-                                <a href="home.html">HOME</a>
+                                <a href="home.html"> HOME </a>
                             </li>
 
                             <li>
-                                <a href="../playlist/playlist.html"> PLAYLISTS</a>
+                                <a href="playlist.html"> PLAYLISTS</a>
                             </li>
 
                             <li>
-                                <a href="../detail/Genero.html">GENERO</a>
+                                <a href="Genero.html"> GENERO </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </article>
+            </nav>
             
-            <article class="logo">
-                BEAMER
-            </article>
+            <nav class="logo">
+             BEAMER 
+            </nav>
 
-            <article class="titulos">
+            <nav class="titulos">
                 <a href="home.html">HOME</a>
-                <a href="../playlist/playlist.html"> PLAYLISTS</a>
-                <a href="../detail/Genero.html">GENERO</a>
-             </article>
-           
-            <article class="lupita">
+                <a href="playlist.html"> PLAYLISTS</a>
+                <a href="Genero.html">GENERO</a>
+            </nav>
+
+            <nav class="lupita">
                 <i class="fas fa-search"></i>
-            </article>
-        </section>
+            </nav>
+        </nav>
     </header>
     
     <main>
         <h3>Tracks</h3>
 
-        <div uk-slider class="tracks">
+        <div uk-slider class="tracks"> <!-- porque dice uk-slider sin clase o nada -->
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
             
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                    <li>
-                        <a href="../detail/Tracks.html"><img src="../images/Track1.jpg" alt="Foto de cancion: Rojo"> </a>    
+                    <li class="tops">
+                        <a href="Tracks.html"><img src="images/Track1.jpg" alt="Foto de cancion: Rojo"> </a>    
                     </li> 
 
-                    <li>
-                        <a href="../detail/Tracks.html"><img src="../images/Track2.jpg" alt="Foto de cancion: Canguro"></a>      
+                    <li class="tops">
+                        <a href="Tracks.html"><img src="images/Track2.jpg" alt="Foto de cancion: Canguro"></a>      
                     </li>
             
-                    <li>
-                        <a href="../detail/Tracks.html"><img src="../images/Track3.jpg" alt="Foto de cancion: BZRP Music Session" ></a>
+                    <li class="tops">
+                        <a href="Tracks.html"><img src="images/Track3.jpg" alt="Foto de cancion: BZRP Music Session" ></a>
                     </li>
                 
-                    <li>
-                        <a href="../detail/Tracks.html"><img src="../images/Track4.jpg" alt="Foto de cancion: Flamingo Star" ></a>
+                    <li class="tops">
+                        <a href="Tracks.html"><img src="images/Track4.jpg" alt="Foto de cancion: Flamingo Star" ></a>
                     </li>
 
-                    <li>
-                        <a href="../detail/Tracks.html"><img src="../images/Track5.jpg" alt="Foto de cancion: Nada" ></a>
+                    <li class="tops">
+                        <a href="Tracks.html"><img src="images/Track5.jpg" alt="Foto de cancion: Nada" ></a>
                     </li>
 
                 </ul>
@@ -105,24 +106,24 @@
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
             
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                    <li>
-                        <a href="../detail/Artists.html"><img src="../images/Artista1.jpg" alt="Foto de Artista: Duki "> </a>    
+                    <li class="tops">
+                        <a href="Artists.html"><img src="images/Artista1.jpg" alt="Foto de Artista: Duki "> </a>    
                     </li> 
 
-                    <li>
-                        <a href="../detail/Artists.html"><img src="../images/Artista2.jpg" alt="Foto de Artista: Wiz Kalifa "></a>      
+                    <li class="tops">
+                        <a href="Artists.html"><img src="images/Artista2.jpg" alt="Foto de Artista: Wiz Kalifa "></a>      
                     </li>
             
-                    <li>
-                        <a href="../detail/Artists.html"><img src="../images/Artista3.jpg" alt="Foto de Artista: J Balvin " ></a>
+                    <li class="tops">
+                        <a href="Artists.html"><img src="images/Artista3.jpg" alt="Foto de Artista: J Balvin " ></a>
                     </li>
                 
-                    <li>
-                        <a href="../detail/Artists.html"><img src="../images/Artista4.jpg" alt="Foto de Artista: Eminem " ></a>
+                    <li class="tops">
+                        <a href="Artists.html"><img src="images/Artista4.jpg" alt="Foto de Artista: Eminem " ></a>
                     </li>
 
-                    <li>
-                        <a href="../detail/Artists.html"><img src="../images/Artista6.jpg" alt="Foto de Artista: El Dipy " ></a>
+                    <li class="tops">
+                        <a href="Artists.html"><img src="images/Artista6.jpg" alt="Foto de Artista: El Dipy " ></a>
                     </li>
 
                 </ul>
@@ -140,24 +141,24 @@
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
             
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                    <li>
-                        <a href="../detail/Albums.html"><img src="../images/Album1.jpg" alt="DAMN"> </a>    
+                    <li class="tops">
+                        <a href="Albums.html"><img src="images/Album1.jpg" alt="DAMN"> </a>    
                     </li> 
 
-                    <li>
-                        <a href="../detail/Albums.html"><img src="../images/Album2.jpg" alt="Foto de album: DAMN Collectors Edition"></a>      
+                    <li class="tops">
+                        <a href="Albums.html"><img src="images/Album2.jpg" alt="Foto de album: DAMN Collectors Edition"></a>      
                     </li>
             
-                    <li>
-                        <a href="../detail/Albums.html"><img src="../images/Album3.jpg" alt="Foto de album: good kid, m.A.A.d city" ></a>
+                    <li class="tops">
+                        <a href="Albums.html"><img src="images/Album3.jpg" alt="Foto de album: good kid, m.A.A.d city" ></a>
                     </li>
                 
-                    <li>
-                        <a href="../detail/Albums.html"><img src="../images/Album4.jpg" alt="Foto de album: Section.80" ></a>
+                    <li class="tops">
+                        <a href="Albums.html"><img src="images/Album4.jpg" alt="Foto de album: Section.80" ></a>
                     </li>
 
-                    <li>
-                        <a href="../detail/Albums.html"><img src="../images/Album5.jpg" alt="Foto de album: Error 93" ></a>
+                    <li class="tops">
+                        <a href="Albums.html"><img src="images/Album5.jpg" alt="Foto de album: Error 93" ></a>
                     </li>
 
                 </ul>
@@ -183,7 +184,7 @@
             </article>
 
             <article>
-                <img class="logo" src="../images/logo-deezer.png" alt="Logo Deezer">
+                <img class="logo" src="images/logo-deezer.png" alt="Logo Deezer">
             </article>
 
             <article>
@@ -208,7 +209,7 @@
     </footer>
 </body>
 
-    <script src="../ui-kit/js/uikit.min.js"></script>
-    <script src="../ui-kit/js/uikit-icons.min.js"></script>
+    <script src="ui-kit/js/uikit.min.js"></script>
+    <script src="ui-kit/js/uikit-icons.min.js"></script>
 
 </html>

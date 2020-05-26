@@ -1,5 +1,5 @@
 /* HEADER */
-header section{
+.contenedor{
 	font-family: 'Lato', sans-serif;
 	background-color: #191c59;
 	width: 100%;
@@ -12,21 +12,27 @@ header section{
 	grid-template-columns: 20% 50% 20%;
 	justify-content: space-around;
 }
+
 .titulos{
 	display: none;
 }
 
-header i{
+.lupita{
 	margin: auto;
 	color: azure;
 }
 
-header article{
+.fa-grip-lines{
+	margin: 16px 24px;
+	color: azure;
+}
+
+header .logo{
 	margin: auto;
 	color: azure;
 }
 
-header section article ul li{
+header .contenedor .menu ul li{
 	margin: 0px 0px 20px;
 	font-size: 20px;
 }
@@ -49,14 +55,13 @@ header section article ul li{
 	color: azure;
 	text-align: left;
 }
-
 	
-header section{
+.contenedor{
 	grid-template-columns: 5% 60% 20%;
 }
 
-header article{
-	margin: 0;
+.logo{
+	margin: auto;
 }
 
 .lupita{
