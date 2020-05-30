@@ -10,9 +10,6 @@ window.addEventListener("load", function() {
         console.log(information);
 
         let generos = information.data
-    
-        
-
 
         for (let i = 1; i < 11; i++) {
             const element = generos[i];
@@ -21,7 +18,9 @@ window.addEventListener("load", function() {
             let imagen = element.picture
 
             document.querySelector("#fotos-generos").innerHTML += ` <article>
-            <a href="Genero.html"><img src="`+ imagen +`" alt="Foto de Genero` + ` ` + nombre + `"></a>
+            <a href="Genero.html"><img src="`+ imagen +`" alt="Foto de Genero` + ` ` + nombre + `">
+            <h2 class="nombre-genero">`+ nombre +`</h2>
+            </a>
              </article> `
         }
     })

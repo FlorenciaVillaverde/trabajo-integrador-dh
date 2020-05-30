@@ -19,12 +19,20 @@ section{
 
 main section img{
     width: 100%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 article{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.nombre-genero{ /* poner el nombre del genero sobre la foto*/
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    
 }
 
 /*FOOTER*/
@@ -60,6 +68,7 @@ margin: auto;
     div h1{ /*titulo genero?*/
         text-align: left;
         font-size: 50px;
+        margin-left: 30px;
         
     }
 
