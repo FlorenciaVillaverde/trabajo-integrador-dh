@@ -34,6 +34,14 @@ article{
     margin-bottom: 10px;
 }
 
+.nombre-artista{
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    
+}
+
 aside h3{
     color: azure;
     font-size: xx-large;
