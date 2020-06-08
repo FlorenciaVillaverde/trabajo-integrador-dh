@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
         console.log(artistas);
         
         let nombre = information.name
-        let imagen = information.picture
+        let imagen = information.picture_xl
         let fans = information.nb_fan
         let topCanciones = information.tracklist
         

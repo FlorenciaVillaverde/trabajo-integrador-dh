@@ -18,7 +18,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + nume
         const element = generos[i];
         
         let nombre = element.name 
-        let imagen = element.picture
+        let imagen = element.picture_xl
         let id = element.id
         document.querySelector("#detalle-genero").innerHTML += `<article>
         <a href="Artists.html?idArtista=`+ id +`"><img src="`+ imagen +`" alt="Foto de` + " " + nombre +`">

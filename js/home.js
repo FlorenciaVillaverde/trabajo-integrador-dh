@@ -18,10 +18,10 @@ window.addEventListener("load", function() {
             const element = albums[i];
          
             let nombre = element.title
-            let imagen = element.cover
-
+            let imagen = element.cover_xl
+            let id = element.id
             document.querySelector("#fotos-albums").innerHTML += ` <li class="tops">
-            <a href="Albums.html"><img src="`+ imagen +`" alt="Foto de`+" " + nombre +` "> </a>    
+            <a href="Albums.html?idAlbum=`+ id +`"><img src="`+ imagen +`" alt="Foto de`+" " + nombre +` "> </a>    
             </li>`
         }
 
@@ -30,10 +30,11 @@ window.addEventListener("load", function() {
             const element = artists[i];
          
             let nombre = element.name
-            let imagen = element.picture
-
+            let imagen = element.picture_xl
+            let id = element.id
+            
             document.querySelector("#fotos-artists").innerHTML += ` <li class="tops">
-            <a href="Artists.html"><img src="`+ imagen +`" alt="Foto de`+" " + nombre +` "> </a>    
+            <a href="Artists.html?idArtista=`+ id +`"><img src="`+ imagen +`" alt="Foto de`+" " + nombre +` "> </a>    
             </li>`
         }
 
@@ -42,7 +43,7 @@ window.addEventListener("load", function() {
             const element = tracks[i];
         
             let nombre = element.title
-            let imagen = element.album.cover
+            let imagen = element.album.cover_xl
 
             document.querySelector("#fotos-tracks").innerHTML += ` <li class="tops">
             <a href="Tracks.html"><img src="`+ imagen +`" alt="Foto de cancion`+" " + nombre +` "> </a>    

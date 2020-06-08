@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
             const element = generos[i];
          
             let nombre = element.name
-            let imagen = element.picture
+            let imagen = element.picture_xl
             let id = element.id
             document.querySelector("#fotos-generos").innerHTML += ` <article>
             <a href="Genero.html?idGenero=`+ id +`"><img src="`+ imagen +`" alt="Foto de Genero` + ` ` + nombre + `">
