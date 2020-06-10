@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
         let topCanciones = information.tracklist
         
 
-        document.querySelector(".position").innerHTML = `<img  id="foto-perfil" src="` + imagen +`" alt="foto de` + " "+ nombre +`"></li> 
+        document.querySelector(".position").innerHTML = `<img  id="foto-perfil" src="` + imagen +`" alt="foto de` + " " + nombre +`"></li> 
             <b>` + nombre +`</b>`
 
         document.querySelector(".detalle").innerHTML = `
@@ -50,12 +50,12 @@ window.addEventListener("load", function() {
                     const element = topCanciones[i];
         
                     let nombre = element.title
-                
+                    let idTrack = element.id
         
                     document.querySelector(".topCanciones").innerHTML += `<section>
                     
                         <article class="conteo" >` + (i+1) +`
-                        <a href="Tracks.html">` + nombre +`</a>
+                        <a href="Tracks.html?idTrack=`+ idTrack +`">` + nombre +`</a>
                         </article>
                         
                         <article>
