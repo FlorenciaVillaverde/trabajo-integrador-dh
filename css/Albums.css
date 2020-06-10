@@ -41,7 +41,7 @@ main section{
 
 main article a {
 	font-size: medium;
-	color: white;
+	color: azure;
 	text-decoration: none;
 }
 main article{
@@ -50,14 +50,16 @@ main article{
 }
 
 main article h4{
-	color: gray;
 	font-size: x-small;
-	
 	margin: 5px 0px 20px ;
 }
 
+main article h4 a{
+	color: grey;
+}
+
 aside ul {
-	color: white;
+	color: azure;
 	padding-left: 5%;
 	font-size: x-small;
 
