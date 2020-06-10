@@ -49,6 +49,13 @@ window.addEventListener("load", function() {
         <a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`">
         </a>
         `
+        //NO APARECE EL GENERO AL QUE PERTENECE LA CANCION
+
+
+
+
+
+
 
         /*let reproduccion = track.preview
 
