@@ -35,7 +35,9 @@ window.addEventListener("load", function() {
 
         let estreno = track.release_date
         let duracion = track.duration
+        duracion = Math.floor(duracion/60) +  " " + "mins" + " " + duracion%60 + " " + "segs"
         let fotoArtista = track.artist.picture_xl
+
 
         let idArtist = track.artist.id
 
@@ -44,12 +46,26 @@ window.addEventListener("load", function() {
         <ul>
             <li>`+ estreno +`</li>
             <li>`+ duracion +`</li>
-            <li>Genero - <a href="Genero.html">Latino</a></li>
         </ul>
         <a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`">
         </a>
         `
-        //NO APARECE EL GENERO AL QUE PERTENECE LA CANCION
+
+        //Storage para favear a mi playlist
+        document.querySelector(".add-playlist").addEventListener("click", function(){
+            let ArrayCancionesFavs
+
+            if(localStorage.getItem("cancionesFavs") != null){
+                ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
+                ArrayCancionesFavs.push(numeroTrack)
+            }else {
+                ArrayCancionesFavs = [numeroTrack]
+            }
+
+            localStorage.setItem("cancionesFavs", ArrayCancionesFavs);
+        
+            }
+        )
 
 
 

@@ -116,13 +116,13 @@ footer section article a{
 		width: 100%;
 	}
 
+	main ul li:last-child{
+		border-bottom: 1px solid dimgray;
+	}
+
 	main ul li a {
 		padding: 0%;
 		padding-left: 2%;
-	}
-
-	.ultimo{
-		border-bottom: 1px solid dimgray;
 	}
 
 	ul{
