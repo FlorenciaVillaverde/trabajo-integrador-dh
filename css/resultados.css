@@ -1,0 +1,42 @@
+body{
+	background-color:#1a1a1a;
+	font-family: 'Lato', sans-serif;
+}
+
+img{
+	width: 100%;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+main section img{
+	width: 100%;
+	border: 1px solid white;
+}
+
+article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nombre-track{ 
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+@media (min-width: 768px) {
+	section{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: space-around;
+    
+    }
+}
