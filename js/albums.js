@@ -60,9 +60,12 @@ window.addEventListener("load", function() {
 
         let estreno = album.release_date
         let duracion = album.duration
+        duracion = Math.floor(duracion/60) +  " " + "mins" + " " + duracion%60 + " " + "segs"
         let fotoArtista = album.artist.picture_xl
         let genero = album.genres.data["1"] //PREGUNTAR A SUS
         let idGenero = album.genre_id
+       
+
         document.querySelector(".informacion-album").innerHTML =
         `
         <ul>

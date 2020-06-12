@@ -62,6 +62,11 @@ div ul li a{
 	color: grey;
 }
 
+.populares {
+	padding-left: 20px;
+	color: azure;
+}
+
 main section{
 	display: grid;
 	grid-template-columns:90% 5%;
@@ -155,6 +160,10 @@ footer section article a{
 		margin-right: 73%;
 	}
 
+	.populares{
+	padding: 30px 20px 10px;
+	}
+
 	div ul.detalle li{
 		margin-top: 0px;
 	}
@@ -168,12 +177,12 @@ footer section article a{
 		margin-top: 1px;
 	}
 
+	main section:last-child{
+		border-bottom: 1px solid dimgray;
+	}
+
 	main section article{
 		margin: 15px 0%;
-	}
-	
-	.ultimo{
-		border-bottom: 1px solid dimgray;
 	}
 
 	footer section{

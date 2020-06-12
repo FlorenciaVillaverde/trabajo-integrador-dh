@@ -22,6 +22,11 @@
 	color: azure;
 }
 
+.uk-search-input{
+	color: azure;
+	margin-top: 50px;
+}
+
 .fa-grip-lines{
 	margin: 16px 24px;
 	color: azure;
@@ -67,6 +72,10 @@ header .contenedor .menu ul li{
 .lupita{
 	padding-left: 90%;
 	margin-top: 10px;
+}
+
+.uk-search-input{
+	margin-top: 0;
 }
 
 }

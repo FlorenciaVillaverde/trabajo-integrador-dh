@@ -31,7 +31,10 @@ window.addEventListener("load", function() {
                 <button type="button">
                 Follow</button>
             </li>
-            <li>` + numberWithCommas(fans) + " " +`fans</li>`
+            <li>` + numberWithCommas(fans) + " " +`fans</li>
+            `
+        document.querySelector(".top5").innerHTML = `<h2 class="populares"> Top 5 Canciones </h2>`
+
 
         
             fetch("https://cors-anywhere.herokuapp.com/" + topCanciones)
