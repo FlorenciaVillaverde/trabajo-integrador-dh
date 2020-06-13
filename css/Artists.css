@@ -47,6 +47,7 @@ div b{
 
 .error-desktop {
 	display: none;
+	width: 250px;
 }
 
 div ul.detalle li{
@@ -90,6 +91,10 @@ main section article a {
 
 }
 
+ol, ul{
+	padding-left: 0px;
+}
+
 ol{
 	color: azure ;
 }
@@ -106,16 +111,6 @@ article p{
 	color: black;
 	text-align: center;
 }
-/*	border-right: 1px solid black;
-padding-left : 5%;
-font-size: small;
-
-}
-
-#ultimo{
-border-right: none;
-}
-*/
 
 footer section article {
 	margin: auto;
@@ -166,6 +161,11 @@ footer section article a{
 
 	div ul.detalle li{
 		margin-top: 0px;
+	}
+
+	div ul.detalle li.boton{
+		margin-top: 10px;
+		margin-bottom: 5px;
 	}
 
 	main{

@@ -27,7 +27,7 @@ window.addEventListener("load", function() {
 
         document.querySelector(".detalle").innerHTML = `
             <li><b class="error-desktop">` + nombre+`</b></li>
-            <li>
+            <li class="boton">
                 <button type="button">
                 Follow</button>
             </li>

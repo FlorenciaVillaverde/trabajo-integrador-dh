@@ -62,8 +62,8 @@ window.addEventListener("load", function() {
         let duracion = album.duration
         duracion = Math.floor(duracion/60) +  " " + "mins" + " " + duracion%60 + " " + "segs"
         let fotoArtista = album.artist.picture_xl
-        let genero = album.genres.data["1"] //PREGUNTAR A SUS
-        let idGenero = album.genre_id
+        let genero = album.genres.data
+        
        
 
         document.querySelector(".informacion-album").innerHTML =
@@ -74,11 +74,33 @@ window.addEventListener("load", function() {
             <div>
                 <li>`+ estreno +`</li>
                 <li>`+ duracion +`</li>
-                <li>Genero - <a href="Genero.html?idGenero=`+ idGenero +`">`+ genero +`</a></li>
+                <li class="genero"> Género - </li>
             </div>
         </ul>
         `
+
+        for (let i = 0; i < genero.length; i++) {
+            const element = genero[i];
+            
+           let nombreGenero = element.name
+           let idGenero = element.id
+
+           
+           if (element == 1) {
+            document.querySelector(".genero").innerHTML += 
+            `
+            <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero +`</a>
+            ` 
+           } else{
+            document.querySelector(".genero").innerHTML += 
+            `
+            <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero + " " + "-" + `</a>
+            ` 
+           }
+
+        }
+
     })
 
-
 })    
+
