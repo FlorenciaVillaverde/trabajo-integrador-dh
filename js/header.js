@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-document.querySelector(".header").innerHTML = `
+document.querySelector("header").innerHTML = `
         <nav class="contenedor"> 
             <nav class="menu" >
                 <a href="#offcanvas-usage" uk-toggle>

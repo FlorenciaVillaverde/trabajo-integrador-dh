@@ -51,7 +51,7 @@ window.addEventListener("load", function() {
         </a>
         `
 
-        //Storage para favear a mi playlist
+        //Storage para favear a mi playlist (preguntar a sus si va afuera o dentro del then)
         document.querySelector(".add-playlist").addEventListener("click", function(){
             let ArrayCancionesFavs
 

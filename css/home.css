@@ -32,6 +32,13 @@ main div div ul li {
 	margin-top: 10px;
 }
 
+
+h1{
+	color: azure;
+	font-family: 'Nunito Sans', sans-serif;
+	margin-left: 20px;
+}
+
 h3{
     color: azure;
 	font-size: x-large;

@@ -61,15 +61,34 @@ window.addEventListener("load", function() {
                         <a href="Tracks.html?idTrack=`+ idTrack +`">` + nombre +`</a>
                         </article>
                         
-                        <article>
+                        <article class="add-playlist">
                             <i class="fas fa-plus"></i>
                         </article>
                         </section>`
+                        
                 }
-        
+
+                
+        //Storage para favear a mi playlist (preguntar a sus si va afuera o dentro del then)
+        // no funciona :)
+        document.querySelector(".add-playlist").addEventListener("click", function(){
+        let ArrayCancionesFavs
+
+        if(localStorage.getItem("cancionesFavs") != null){
+            ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
+            ArrayCancionesFavs.push(idTrack2)
+        }else {
+            ArrayCancionesFavs = [idTrack2]
+        }
+
+        localStorage.setItem("cancionesFavs", ArrayCancionesFavs);
+
+        })
+            
+                            
             }) 
     })
-    
+
     
 
 })
