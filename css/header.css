@@ -22,6 +22,15 @@
 	color: azure;
 }
 
+#search-mobile{
+    background-color: white;
+    color: black;
+    margin-left: 120px;
+    margin-right: 24px;
+    height: 40px;
+    width: 200px;
+}
+
 .uk-search-input{
 	color: azure;
 	margin-top: 50px;

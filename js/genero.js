@@ -3,6 +3,14 @@ window.addEventListener("load",function(){
   let queryString = new URLSearchParams(location.search);
 
   let numeroGenero = queryString.get("idGenero");
+  let nombreGenero = queryString.get("nombre");
+ 
+
+  document.querySelector(".titulo-desktop").innerHTML =
+  `
+  <h1>`+ nombreGenero +`</h1>
+  `
+  
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + numeroGenero + "/artists")
 

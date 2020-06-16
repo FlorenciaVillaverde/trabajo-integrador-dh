@@ -43,7 +43,7 @@ document.querySelector("header").innerHTML = `
                     <a uk-search-icon href="#"></a>
                     <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
                         <form class="uk-search uk-search-navbar uk-width-1-1" action="resultados.html" method="GET">
-                            <input class="uk-search-input" type="search" name="buscador" placeholder="Search..." autofocus>
+                            <input id="search-mobile" class="uk-search-input" type="search" name="buscador" placeholder="Search..." autofocus>
                         </form>
                     </div>
                 </div>

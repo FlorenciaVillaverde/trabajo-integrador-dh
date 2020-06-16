@@ -2,7 +2,8 @@ window.addEventListener("load", function() {
     let queryString = new URLSearchParams(location.search)
 
     let search = queryString.get("buscador");
-    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + search)
+   /* fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + search)*/
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=track:"+ search)
     .then(
         function(respuesta) {
             return respuesta.json();            
@@ -11,7 +12,7 @@ window.addEventListener("load", function() {
 
     .then(function(information) {
         
-        let resultados = information.data
+        let resultados = information
 
         console.log(resultados);
           
@@ -28,7 +29,7 @@ window.addEventListener("load", function() {
 
                 // hacer html y css como en genero con borde blanco y linkear el idCancion
 
-                document.querySelector(".resultados").innerHTML += 
+                document.querySelector(".resultados-tracks").innerHTML += 
                 `<article>
                     <a href="Tracks.html?idTrack=`+ idTrack +`"><img src="`+ imagenAlbum +`" alt="Foto de la canción` + ` ` + nombreTrack + `">
                     <h2 class="nombre-track">`+ nombreTrack +`</h2>

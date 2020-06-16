@@ -72,16 +72,11 @@ margin: auto;
 
 
 @media (min-width: 768px) {
-
-    .titulo-desktop{
-        display: grid;
-        grid-template-columns: 20% 70%;
-        justify-content: space-around;
-    }
     
     div h1{
         text-align: left;
         font-size: 50px;
+        margin-left: 3%;
         
     }
 

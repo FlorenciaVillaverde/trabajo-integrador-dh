@@ -62,28 +62,33 @@ window.addEventListener("load", function() {
                         </article>
                         
                         <article class="add-playlist">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-plus botoncito"  idCancion=` + idTrack + `></i>
                         </article>
                         </section>`
                         
                 }
 
+                let botoncitos = document.querySelectorAll(".botoncito")
                 
-        //Storage para favear a mi playlist (preguntar a sus si va afuera o dentro del then)
-        // no funciona :)
-        document.querySelector(".add-playlist").addEventListener("click", function(){
-        let ArrayCancionesFavs
+                for (let i = 0; i < botoncitos.length; i++) {
+                    const element = botoncitos[i];
 
-        if(localStorage.getItem("cancionesFavs") != null){
-            ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
-            ArrayCancionesFavs.push(idTrack2)
-        }else {
-            ArrayCancionesFavs = [idTrack2]
-        }
+                    element.addEventListener("click", function () {
+                        let idTrack = this.getAttribute("idCancion")
+                        
+                        let ArrayCancionesFavs
 
-        localStorage.setItem("cancionesFavs", ArrayCancionesFavs);
+                        if(localStorage.getItem("cancionesFavs") != null){
+                            ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
+                            ArrayCancionesFavs.push(idTrack)
+                        }else {
+                            ArrayCancionesFavs = [idTrack]
+                        }
+                
+                        localStorage.setItem("cancionesFavs", ArrayCancionesFavs);
+                    })
+                }
 
-        })
             
                             
             }) 
