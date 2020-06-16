@@ -31,7 +31,8 @@ article{
     color: azure;
     text-decoration: none;
     text-align: center;
-    font-size: larger;
+    font-size: medium;
+    margin-top: 20px;
     
 }
 
@@ -77,6 +78,11 @@ margin: auto;
         grid-template-columns: 20% 20% 20% 20%;
         justify-content: space-around;
     
+    }
+
+    .nombre-genero{ 
+        font-size: larger;
+        margin-top: 30px;
     }
 
     /*FOOTER*/
