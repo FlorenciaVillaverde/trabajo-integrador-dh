@@ -43,7 +43,9 @@ main article a {
 	font-size: medium;
 	color: azure;
 	text-decoration: none;
+	margin-top: 10px;
 }
+
 main article{
 	margin: 15px 0%;
 	padding-left: 5%;
@@ -51,7 +53,7 @@ main article{
 
 main article h4{
 	font-size: x-small;
-	margin: 5px 0px 20px ;
+	margin: 5px 0px 10px ;
 }
 
 main article h4 a{
@@ -157,6 +159,14 @@ footer section article a{
 		display: grid;
 		grid-template-columns: 40% 40% ;
 		justify-content: space-between;
+	}
+
+	main article a{
+		margin-top: 10px;
+	}
+	main article h4{
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	aside ul  {
