@@ -20,6 +20,12 @@ main div div ul li {
 
 	margin-bottom: 30px;
 	margin-top: 10px;
+
+}
+
+.flow{
+	background: rgba(0, 0, 0, 0.8);
+	color: azure;
 }
 
 .artists{
@@ -30,6 +36,22 @@ main div div ul li {
 .albums{
 	margin-bottom: 30px;
 	margin-top: 10px;
+}
+
+h2.mobile{
+	font-size: 16px;
+	color: azure;
+	margin: 0px;
+	margin-top: 10px;
+	text-decoration: none;	
+
+}
+
+h4.mobile1{
+	color: #b3b3b3;
+	font-size: 11px;
+	margin: 0px;
+	
 }
 
 
