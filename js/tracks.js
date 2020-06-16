@@ -22,6 +22,7 @@ window.addEventListener("load", function() {
         let fotoAlbum = track.album.cover_xl
         
         let idAlbum = track.album.id
+        let idTrack = track.id
 
         document.querySelector(".titulo").innerHTML = 
         `
@@ -48,8 +49,12 @@ window.addEventListener("load", function() {
             <li>`+ duracion +`</li>
         </ul>
         <a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`">
-        </a>
-        `
+        </a>`
+        
+        document.querySelector(".reproCancion").innerHTML = 
+        `<iframe scrolling="no" frameborder="0" allowTransparency="true" 
+        src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=900&height=350&color=800080&layout=dark&size=medium&type=tracks&id=`+ idTrack +`&app_id=1" 
+        width="100%" height="90"></iframe>`
 
         //Storage para favear a mi playlist (preguntar a sus si va afuera o dentro del then)
         document.querySelector(".add-playlist").addEventListener("click", function(){
@@ -70,7 +75,7 @@ window.addEventListener("load", function() {
 
 
 
-
+        
 
 
         /*let reproduccion = track.preview
