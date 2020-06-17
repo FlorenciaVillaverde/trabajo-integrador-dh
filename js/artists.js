@@ -88,14 +88,17 @@ window.addEventListener("load", function() {
                         localStorage.setItem("cancionesFavs", ArrayCancionesFavs);
                     })
                 }
+                
+            //SPINNER 
+            document.querySelector(".loader").style.display = "none"            
 
+            document.querySelector("main").style.display = "block"   
             
                             
             }) 
     })
 
-    
-
+   
 })
 
 

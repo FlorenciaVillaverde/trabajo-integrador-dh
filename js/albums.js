@@ -51,11 +51,31 @@ window.addEventListener("load", function() {
                 </article>
                 
                 <article class="iconos">
-                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-plus botoncito" idCancion=` + idTrack + `></i>
                 </article>
             </section>
             `
-            
+        }
+
+        let botoncitos = document.querySelectorAll(".botoncito")
+                
+        for (let i = 0; i < botoncitos.length; i++) {
+            const element = botoncitos[i];
+
+            element.addEventListener("click", function () {
+                let idTrack = this.getAttribute("idCancion")
+                
+                let ArrayCancionesFavs
+
+                if(localStorage.getItem("cancionesFavs") != null){
+                    ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
+                    ArrayCancionesFavs.push(idTrack)
+                }else {
+                    ArrayCancionesFavs = [idTrack]
+                }
+        
+                localStorage.setItem("cancionesFavs", ArrayCancionesFavs);
+            })
         }
 
         let estreno = album.release_date
@@ -100,7 +120,13 @@ window.addEventListener("load", function() {
 
         }
 
+        //SPINNER 
+        document.querySelector(".loader").style.display = "none"            
+
+        document.querySelector("main").style.display = "block"   
+
     })
+
 
 })    
 

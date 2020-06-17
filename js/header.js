@@ -50,4 +50,15 @@ document.querySelector("header").innerHTML = `
             </nav>
         </nav>
 `
+
+window.onscroll = function(e){
+    console.log(window.scrollY);
+    if(window.scrollY > 50){
+        document.querySelector(".contenedor").style.backgroundColor = "rgba(26,26,26,0.8)"
+    }else{
+        document.querySelector(".contenedor").style.backgroundColor = "#1a1a1a"
+    }
+
+    
+}
 })

@@ -4,10 +4,15 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+main{
+	padding-top: 40px;
+}
+
 .container{
 	margin: 0 auto;
     width: 80%;
 }
+
 #foto-cancion{
 	width: 50%;
 	margin: 0 auto;
@@ -119,11 +124,18 @@ footer section article a{
 
 	#foto-cancion {
 	width: 100%;
+	margin-top: 0px;
+	}
+
+
+	main{
+		padding-top: 80px;
 	}
 
 	div h1{
 		text-align: left;
 		font-size: 32px;
+		margin-top: 0px;
 	}
 	
 	div h2{
@@ -134,17 +146,22 @@ footer section article a{
 		margin-left: 0%;
 	}
 
+	aside{
+		display: grid;
+		grid-template-columns: 10% 85%;
+		justify-content: space-around;
+	}
+
 	aside ul{
 		text-align: left;
-		margin-top: 50px;
-		padding-left: 5%;
+		margin-top: 20px;
 	}
 
 	aside img{
 		display: block;
 		border-radius: 50%;
-		width: 10%;
-		margin-left: 4%;
+		width: 100%;
+		margin-left: 10%;
 	}
 
 	.add-playlist{

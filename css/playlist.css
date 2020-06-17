@@ -38,7 +38,7 @@ main ul li a {
 }
 
 main{
-	margin-top: 30px;
+	padding-top: 60px;
 }
 
 .artista{
@@ -62,16 +62,6 @@ article p{
 	color: black;
 	text-align: center;
 }
-/*	border-right: 1px solid black;
-padding-left : 5%;
-font-size: small;
-
-}
-
-#ultimo{
-border-right: none;
-}
-*/
 
 footer section article {
 	margin: auto;
@@ -89,6 +79,7 @@ footer section article a{
 @media (min-width: 768px){
 
 	.titulo{
+		margin-bottom: 70px;
 		display: grid;
 		grid-template-columns: 25% 70%;
 		justify-content: space-around;
@@ -107,6 +98,9 @@ footer section article a{
 		margin-top: 10px;
 	}
 
+	main{
+		padding-top: 80px;
+	}
 	main ul li{
 		padding-top: 25px;
 		border-top: 1px solid dimgray;

@@ -43,13 +43,14 @@ window.addEventListener("load", function() {
         let idArtist = track.artist.id
 
         document.querySelector(".informacion-cancion").innerHTML = 
-        `
+        `<a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`">
+        </a>
         <ul>
+            <li><a href="Artists.html?idArtista=`+ idArtist +`">`+ nombreArtista +` </a></li>
             <li>`+ estreno +`</li>
             <li>`+ duracion +`</li>
         </ul>
-        <a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`">
-        </a>`
+        `
         
         document.querySelector(".reproCancion").innerHTML = 
         `<iframe scrolling="no" frameborder="0" allowTransparency="true" 
@@ -76,7 +77,10 @@ window.addEventListener("load", function() {
 
 
         
+        //SPINNER 
+        document.querySelector(".loader").style.display = "none"            
 
+        document.querySelector("main").style.display = "block"   
 
         /*let reproduccion = track.preview
 
@@ -85,6 +89,7 @@ window.addEventListener("load", function() {
         <audio src="`+ reproduccion +`"></audio>
         `*/
     })   
+
 
 
 })

@@ -74,13 +74,12 @@ window.addEventListener("load", function() {
             </li>`
         }
 
+    //SPINNER 
+    document.querySelector(".loader").style.display = "none"            
 
-            
-
-
+    document.querySelector("main").style.display = "block"    
         
         
     })
-
 
 })

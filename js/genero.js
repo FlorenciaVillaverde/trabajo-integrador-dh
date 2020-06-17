@@ -39,11 +39,14 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + nume
       }
 
 
+      //SPINNER 
+      document.querySelector(".loader").style.display = "none"            
 
+      document.querySelector("main").style.display = "block"   
 
-    }
-       )
+    })
 
+  
 
 })
 

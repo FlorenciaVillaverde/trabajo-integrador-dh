@@ -3,6 +3,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+main{
+    padding-top: 60px;
+}
+
 #foto-genero{
 	width: 50%;
 	margin: 0 auto;
@@ -80,6 +84,10 @@ margin: auto;
         
     }
 
+    main{
+        padding-top: 60px;
+    }
+    
     section{
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;

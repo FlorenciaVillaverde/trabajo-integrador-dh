@@ -31,6 +31,11 @@ window.addEventListener("load", function() {
                 <a href="Tracks.html?idTrack=`+ idTrack +`">`+ nombreCancion +`</a></h4>
                 <h4> <a class="artista" href="Artists.html?idArtista=`+ idArtista +`">`+ nombreArtista +`</a></h4>
                 </li>`
+            
+            //SPINNER 
+            document.querySelector(".loader").style.display = "none"            
+
+            document.querySelector("main").style.display = "block"   
             })
 
         }
@@ -38,5 +43,6 @@ window.addEventListener("load", function() {
         } else {    
             alert("Ey! No hay favs!")// mas estetico
         }
-        }
-)
+        
+  
+})
