@@ -19,6 +19,13 @@ main section img{
 	border: 1px solid white;
 }
 
+h3{
+    color: azure;
+	font-size: x-large;
+	font-family: 'Nunito Sans', sans-serif;
+	margin-left: 20px;
+}
+
 article{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -32,6 +39,32 @@ article{
     
 }
 
+footer section{
+	background-color: white;
+	display: grid;
+	grid-template-columns: 30% 30% 30% ;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+
+article p{
+	color: black;
+	text-align: center;
+}
+
+footer section article {
+	margin: auto;
+}
+
+footer section article a{
+	color: black;
+}
+
+.logo{
+	width: 100%;
+	margin: auto;
+}
+
 @media (min-width: 768px) {
 	section{
         display: grid;
@@ -39,4 +72,16 @@ article{
         justify-content: space-around;
     
     }
+
+    h3{
+		margin-left: 35px;
+	}
+
+	footer section{
+		grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+	}
+
+	footer section article p{
+		margin: 0;
+	}
 }

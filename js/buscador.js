@@ -2,8 +2,8 @@ window.addEventListener("load", function() {
     let queryString = new URLSearchParams(location.search)
 
     let search = queryString.get("buscador");
-   /* fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + search)*/
-    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=track:"+ search)
+
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q="+ search)
     .then(
         function(respuesta) {
             return respuesta.json();            
@@ -12,26 +12,29 @@ window.addEventListener("load", function() {
 
     .then(function(information) {
         
-        let resultados = information
+            let resultados = information.data
 
-        console.log(resultados);
+            console.log(resultados);
           
             if (resultados == undefined || resultados.length == 0) {
-                alert("No hay resultados"); 
+                document.querySelector(".resultados-tracks").innerHTML =
+                `
+                <p>No se han encontrado canciones</p>
+                `
             }
 
-            for (let i = 0; i < resultados.length; i++) {
+            for (let i = 0; i < 4; i++) {
                 const element = resultados[i];
 
                 let nombreTrack = element.title
-                let imagenAlbum = element.album.cover_xl
+                let imagen = element.album.cover_xl
+
                 let idTrack = element.id
 
-                // hacer html y css como en genero con borde blanco y linkear el idCancion
 
                 document.querySelector(".resultados-tracks").innerHTML += 
                 `<article>
-                    <a href="Tracks.html?idTrack=`+ idTrack +`"><img src="`+ imagenAlbum +`" alt="Foto de la canción` + ` ` + nombreTrack + `">
+                    <a href="Tracks.html?idTrack=`+ idTrack +`"><img src="`+ imagen +`" alt="Foto de la canción` + ` ` + nombreTrack + `">
                     <h2 class="nombre-track">`+ nombreTrack +`</h2>
                     </a>
                 </article> `
@@ -39,10 +42,87 @@ window.addEventListener("load", function() {
             }
                 
 
+        })
 
 
+        fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q="+ search)
+        .then(
+            function(respuesta) {
+                return respuesta.json();            
+            }
+        )
+    
+        .then(function(information) {
+            
+            let resultados = information.data
+    
+            console.log(resultados);
+        
+            if (resultados == undefined || resultados.length == 0) {
+                document.querySelector(".resultados-artists").innerHTML =
+                `
+                <p>No se han encontrado artistas</p>
+                ` 
+            }
+
+            for (let i = 0; i < 4; i++) {
+                const element = resultados[i];
+
+                let nombreArtista = element.name
+                let imagen = element.picture_xl
+
+                let idArtista = element.id
 
 
-        }
-    )
+                document.querySelector(".resultados-artists").innerHTML += 
+                `<article>
+                    <a href="Artists.html?idArtista=`+ idArtista +`"><img src="`+ imagen +`" alt="Foto de` + ` ` + nombreArtista + `">
+                    <h2 class="nombre-track">`+ nombreArtista +`</h2>
+                    </a>
+                </article> `
+                }
+
+        })
+    
+
+        fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q="+ search)
+        .then(
+            function(respuesta) {
+                return respuesta.json();            
+            }
+        )
+    
+        .then(function(information) {
+            
+            let resultados = information.data
+    
+            console.log(resultados);
+        
+            if (resultados == undefined || resultados.length == 0) {
+                document.querySelector(".resultados-albums").innerHTML =
+                `
+                <p>No se han encontrado albums</p>
+                ` 
+            }
+
+            for (let i = 0; i < 4; i++) {
+                const element = resultados[i];
+
+                let nombreAlbum = element.title
+                let imagen = element.cover_xl
+
+                let idAlbum = element.id
+
+
+                document.querySelector(".resultados-albums").innerHTML += 
+                `<article>
+                    <a href="Albums.html?idAlbum=`+ idAlbum +`"><img src="`+ imagen +`" alt="Foto del album` + ` ` + nombreAlbum + `">
+                    <h2 class="nombre-track">`+ nombreAlbum +`</h2>
+                    </a>
+                </article> `
+                }
+
+        })
+
+
 })
