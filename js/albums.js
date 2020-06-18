@@ -126,19 +126,10 @@ window.addEventListener("load", function() {
            let nombreGenero = element.name
            let idGenero = element.id
 
-           
-           if (element == 1) {
-            document.querySelector(".genero").innerHTML += 
-            `
-            <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero +`</a>
-            ` 
-           } else{
             document.querySelector(".genero").innerHTML += 
             `
             <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero + " " + "-" + `</a>
             ` 
-           }
-
         }
 
         //SPINNER 

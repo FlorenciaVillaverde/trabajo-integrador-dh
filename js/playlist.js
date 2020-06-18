@@ -43,8 +43,18 @@ window.addEventListener("load", function() {
 
          
 
-        } else {    
-            alert("Ey! No hay favs!")// mas estetico
+        }else{    
+            alert("Aún no has agregado canciones a tu playlist")
+
+            document.querySelector(".loader").style.display = "none"            
+
+            document.querySelector("main").style.display = "block"   
+
+            document.querySelector(".cancionesFavs").innerHTML =
+                `
+                <p> No se han encontrado artistas</p>
+                ` 
+            
         }
         
   
