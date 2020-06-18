@@ -3,6 +3,11 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
+
 img{
 	width: 100%;
 }
@@ -15,22 +20,15 @@ main{
 main div div ul li {
 	margin-right: 5%;
 	padding-left: 5%;
-} /*no funciona si le ponemos .tops */
+}
 
 .uk-dotnav {
 	display: none;
 }
 
 .tracks{
-
 	margin-bottom: 30px;
 	margin-top: 10px;
-
-}
-
-.flow{
-	background: rgba(0, 0, 0, 0.8);
-	color: azure;
 }
 
 .artists{
@@ -49,16 +47,13 @@ h2.mobile{
 	margin: 0px;
 	margin-top: 10px;
 	text-decoration: none;	
-
 }
 
 h4.mobile1{
 	color: #b3b3b3;
 	font-size: 11px;
-	margin: 0px;
-	
+	margin: 0px;	
 }
-
 
 h1{
 	color: azure;
@@ -111,10 +106,11 @@ footer section article a{
 	main{
 		padding-top: 90px;
 	}
+	
 	main div div ul li {
 		margin-right: 0%;
 		padding-left: 3%;
-	}/*no funciona si le ponemos .tops */
+	}
 	
 	.uk-dotnav {
 		display: flex;

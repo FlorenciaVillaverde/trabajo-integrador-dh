@@ -45,16 +45,6 @@ window.addEventListener("load", function() {
             </a>    
             </li>`
         }
-
-        /*let nombreTrack = tracks.title
-         document.querySelector(".tops").addEventListener("mouseover", function() {
-            document.querySelector.innerHTML = 
-            `
-            <h3 class="flow">` + nombreTrack + `</h3>
-            `
-            
-
-        })*/
        
         
         for (let i = 0; i < 5; i++) {
