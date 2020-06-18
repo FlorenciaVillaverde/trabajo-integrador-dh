@@ -62,7 +62,7 @@ window.addEventListener("load", function() {
                         </article>
                         
                         <article class="add-playlist">
-                            <i class="fas fa-plus botoncito"  idCancion=` + idTrack + `></i>
+                            <i class="fas fa-heart botoncito"  idCancion=` + idTrack + `></i>
                         </article>
                         </section>`
                         
@@ -73,15 +73,34 @@ window.addEventListener("load", function() {
                 for (let i = 0; i < botoncitos.length; i++) {
                     const element = botoncitos[i];
 
+                    let idTrack = element.getAttribute("idCancion")
+                    if(localStorage.getItem("cancionesFavs") != null){
+                        ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
+
+                        if(ArrayCancionesFavs.includes("" + idTrack)){
+                        
+                            element.style.color = "#E43397"
+                        }
+                    }
+
                     element.addEventListener("click", function () {
-                        let idTrack = this.getAttribute("idCancion")
                         
                         let ArrayCancionesFavs
 
                         if(localStorage.getItem("cancionesFavs") != null){
                             ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
-                            ArrayCancionesFavs.push(idTrack)
-                        }else {
+                           
+                            if(ArrayCancionesFavs.includes("" + idTrack)){
+                                let posicion = ArrayCancionesFavs.indexOf(idTrack)
+                                ArrayCancionesFavs.splice(posicion, 1)
+                                this.style.color = "white"
+                            }else{
+                                ArrayCancionesFavs.push(idTrack)
+                                this.style.color = "#E43397"
+                                
+                            }
+
+                        }else{
                             ArrayCancionesFavs = [idTrack]
                         }
                 
