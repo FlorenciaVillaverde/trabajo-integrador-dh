@@ -51,7 +51,7 @@ window.addEventListener("load", function() {
                 </article>
                 
                 <article class="iconos">
-                    <i class="fas fa-plus botoncito" idCancion=` + idTrack + `></i>
+                    <i class="fas fa-heart botoncito" idCancion=` + idTrack + `></i>
                 </article>
             </section>
             `
@@ -62,15 +62,36 @@ window.addEventListener("load", function() {
         for (let i = 0; i < botoncitos.length; i++) {
             const element = botoncitos[i];
 
+            let idTrack = element.getAttribute("idCancion")
+            if(localStorage.getItem("cancionesFavs") != null){
+                ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
+
+                if(ArrayCancionesFavs.includes("" + idTrack)){
+                
+                    element.style.color = "#E43397"
+                }
+            }
+
             element.addEventListener("click", function () {
-                let idTrack = this.getAttribute("idCancion")
                 
                 let ArrayCancionesFavs
 
+                //console.log(this.parentNode.parentNode);
+                
                 if(localStorage.getItem("cancionesFavs") != null){
                     ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
-                    ArrayCancionesFavs.push(idTrack)
-                }else {
+                    
+                    if(ArrayCancionesFavs.includes("" + idTrack)){
+                        let posicion = ArrayCancionesFavs.indexOf(idTrack)
+                        ArrayCancionesFavs.splice(posicion, 1)
+                        this.style.color = "white"
+                    }else{
+                        ArrayCancionesFavs.push(idTrack)
+                        this.style.color = "#E43397"
+                        
+                    }
+
+                }else{
                     ArrayCancionesFavs = [idTrack]
                 }
         
@@ -105,19 +126,10 @@ window.addEventListener("load", function() {
            let nombreGenero = element.name
            let idGenero = element.id
 
-           
-           if (element == 1) {
-            document.querySelector(".genero").innerHTML += 
-            `
-            <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero +`</a>
-            ` 
-           } else{
             document.querySelector(".genero").innerHTML += 
             `
             <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero + " " + "-" + `</a>
             ` 
-           }
-
         }
 
         //SPINNER 

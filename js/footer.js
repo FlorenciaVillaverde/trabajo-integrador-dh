@@ -4,8 +4,11 @@ window.addEventListener("load",function() {
     `
     <section>
     <article>
-        <a href="https://github.com/FlorenciaVillaverde/trabajo-integrador-dh"> <i class="fab fa-github"></i>
-        </a>
+        <a href="https://github.com/FlorenciaVillaverde/trabajo-integrador-dh"> <i class="fab fa-github"></i> </a>
+        <a href= "https://www.whatsapp.com/"> <i class="fab fa-whatsapp"></i> </a>
+        <a href= "https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> </a>
+        <a href= "https://www.instagram.com/"> <i class="fab fa-instagram"></i> </a>
+        
     </article> 
 
     <article class="logo">

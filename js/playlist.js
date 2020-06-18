@@ -32,16 +32,29 @@ window.addEventListener("load", function() {
                 <h4> <a class="artista" href="Artists.html?idArtista=`+ idArtista +`">`+ nombreArtista +`</a></h4>
                 </li>`
             
-            //SPINNER 
-            document.querySelector(".loader").style.display = "none"            
+                //SPINNER 
+         document.querySelector(".loader").style.display = "none"            
 
-            document.querySelector("main").style.display = "block"   
+         document.querySelector("main").style.display = "block"   
+         
             })
 
         }
 
-        } else {    
-            alert("Ey! No hay favs!")// mas estetico
+         
+
+        }else{    
+            alert("Aún no has agregado canciones a tu playlist")
+
+            document.querySelector(".loader").style.display = "none"            
+
+            document.querySelector("main").style.display = "block"   
+
+            document.querySelector(".cancionesFavs").innerHTML =
+                `
+                <p> No se han encontrado artistas</p>
+                ` 
+            
         }
         
   

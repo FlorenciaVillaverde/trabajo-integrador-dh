@@ -63,7 +63,8 @@ div h2 a{
 
 
 button:hover {
-	background-color:white;
+	background-color:#E43397;
+	border:1px solid #E43397;
 	color: #1a1a1a;
 }
 

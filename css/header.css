@@ -27,12 +27,15 @@ a:hover{
 }
 
 #search-mobile{
-    background-color: rgba(26,26,26,0.8);
+    background-color: #E43397;
+    border: 1px solid #E43397;
+    border-radius: 10px;
     color: azure;
     margin-left: 120px;
-    margin-right: 24px;
+	margin-right: 24px;
+	padding-left: 10px;
     height: 40px;
-    width: 200px;
+	width: 200px;
 }
 
 .uk-search-input{
@@ -60,6 +63,12 @@ header .contenedor .menu ul li{
 
 .menu{
 	display: none;
+}
+
+#search-mobile{
+    background-color: rgba(26,26,26,0.8);
+    border: none;
+	border-radius: none;
 }
 
 .titulos{
