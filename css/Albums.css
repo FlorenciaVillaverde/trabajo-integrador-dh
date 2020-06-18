@@ -3,6 +3,11 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
+
 #foto-album{
 	width: 50%;
 	margin: 0 auto;
@@ -30,6 +35,7 @@ div h2 a{
 }
 
 main{
+	display: none;
 	padding-top: 40px;
 }
 

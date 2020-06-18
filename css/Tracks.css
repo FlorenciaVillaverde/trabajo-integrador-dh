@@ -4,7 +4,13 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
+
 main{
+	display: none;
 	padding-top: 40px;
 }
 
@@ -84,7 +90,6 @@ aside img{
 
 iframe{
 	margin-top: 50px;
-	/*position: fixed; Sus*/
 }
 
 footer section{

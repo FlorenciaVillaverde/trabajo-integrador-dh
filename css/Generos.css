@@ -3,6 +3,11 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
+
 div h1{ /*titulo genero*/
 	text-align: center;
 	color: azure;
@@ -10,6 +15,7 @@ div h1{ /*titulo genero*/
 }
 
 main{
+    display: none;
     padding-top: 60px;
 }
 
@@ -30,7 +36,7 @@ article{
     margin-bottom: 10px;
 }
 
-.nombre-genero{ /* poner el nombre del genero sobre la foto*/
+.nombre-genero{ 
     color: azure;
     text-decoration: none;
     text-align: center;
@@ -69,7 +75,7 @@ margin: auto;
 
 @media (min-width: 768px) {
 
-    div h1{ /*titulo genero?*/
+    div h1{ 
         text-align: left;
         font-size: 50px;
         margin-left: 30px;
