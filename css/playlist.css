@@ -3,6 +3,10 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
 
 #foto-previa{
 	width: 50%;
@@ -87,7 +91,7 @@ footer section article a{
 
 	}
 	#foto-previa{
-		width: 70%; /*decia 100% https://unsplash.com/s/photos/music*/ 
+		width: 70%;
 	}
 
 	h2{

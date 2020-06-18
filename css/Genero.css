@@ -3,7 +3,13 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
+
 main{
+    display: none;
     padding-top: 60px;
 }
 

@@ -3,6 +3,11 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color: #E43397;
+	text-decoration: none;
+}
+
 img{
 	width: 100%;
 }
@@ -15,6 +20,7 @@ section{
 }
 
 main{
+	display: none;
 	padding-top: 60px;
 }
 
