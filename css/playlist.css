@@ -38,6 +38,7 @@ main ul li a {
 }
 
 main{
+	display: none;
 	padding-top: 60px;
 }
 
