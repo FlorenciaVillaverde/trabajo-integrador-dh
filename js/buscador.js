@@ -122,11 +122,11 @@ window.addEventListener("load", function() {
                 </article> `
                 }
 
-        //SPINNER 
+       
+        })
+        /*SPINNER no funca 
         document.querySelector(".loader").style.display = "none"            
 
-        document.querySelector("main").style.display = "block"   
-        })
-
+        document.querySelector("main").style.display = "block"   */
 
 })
