@@ -46,6 +46,10 @@ main{
 	padding-top: 60px;
 }
 
+main ul li .botoncito{
+	display:none
+}
+
 .artista{
 	color: gray;
 	font-size: small;	
@@ -113,9 +117,13 @@ footer section article a{
 		border-top: 1px solid dimgray;
 
 		display: grid;
-		grid-template-columns: 60% 35% ;
+		grid-template-columns: 60% 35% 5%;
 		justify-content: space-between;
 		width: 100%;
+	}
+
+	main ul li .botoncito{
+		display:block
 	}
 
 	main ul li:last-child{
