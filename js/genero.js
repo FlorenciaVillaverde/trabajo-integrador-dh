@@ -24,7 +24,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + nume
     
     let generos = information.data
 
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 10; i++) {
         const element = generos[i];
         console.log(element);
         
