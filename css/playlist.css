@@ -90,6 +90,7 @@ footer section article a{
 		justify-content: space-around;
 
 	}
+	
 	#foto-previa{
 		width: 70%;
 	}
@@ -106,6 +107,7 @@ footer section article a{
 	main{
 		padding-top: 80px;
 	}
+
 	main ul li{
 		padding-top: 25px;
 		border-top: 1px solid dimgray;
@@ -125,6 +127,10 @@ footer section article a{
 		padding-left: 2%;
 	}
 
+	p{
+		margin-left: 5%;
+	}
+
 	ul{
 		padding-left: 0px;
 	}
@@ -136,6 +142,4 @@ footer section article a{
 	footer section article p{
 		margin: 0;
 	}
-
-
 }

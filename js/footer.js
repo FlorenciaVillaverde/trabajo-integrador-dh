@@ -33,7 +33,7 @@ window.addEventListener("load",function() {
     </article>
 
     <article>
-        <p id="ultimo">
+        <p>
             Nico Serena
         </p>
     </article>

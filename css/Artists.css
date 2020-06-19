@@ -14,13 +14,13 @@ a:hover{
 
 #foto-perfil{
 	width: 100%;
-
 }
 
 main{
 	display: none;
 	padding-top: 50px;
 }
+
 button {
 	background-color:transparent;
 	border-radius:28px;
@@ -63,7 +63,6 @@ div ul.detalle li{
 	color: gray;
 	font-size: small;
 	margin-top: 15px;
-	
 }
 
 div ul li a{
@@ -96,7 +95,6 @@ main section article a {
 	font-size: medium;
 	color: white;
 	padding: 2%;
-
 }
 
 ul.detalle{
@@ -177,7 +175,6 @@ footer section article a{
 		margin-top: 10px;
 		margin-bottom: 5px;
 	}
-
 
 	main section{
 		border-top: 1px solid dimgray;

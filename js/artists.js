@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
         let fans = information.nb_fan
         let topCanciones = information.tracklist
         
-
+        //Detalle del artista (foto, nombre y fans)
         document.querySelector(".position").innerHTML = `<img  id="foto-perfil" src="` + imagen +`" alt="foto de` + " " + nombre +`"></li> 
             <b>` + nombre +`</b>`
 
@@ -35,8 +35,7 @@ window.addEventListener("load", function() {
             `
         document.querySelector(".top5").innerHTML = `<h2 class="populares"> Top 5 Canciones </h2>`
 
-
-        
+            //Top 5 canciones
             fetch("https://cors-anywhere.herokuapp.com/" + topCanciones)
 
             .then(function(response) {
@@ -68,6 +67,7 @@ window.addEventListener("load", function() {
                         
                 }
 
+                //Storage para favear a mi playlist 
                 let botoncitos = document.querySelectorAll(".botoncito")
                 
                 for (let i = 0; i < botoncitos.length; i++) {
@@ -111,15 +111,10 @@ window.addEventListener("load", function() {
             //SPINNER 
             document.querySelector(".loader").style.display = "none"            
 
-            document.querySelector("main").style.display = "block"   
-            
-                            
-            }) 
+            document.querySelector("main").style.display = "block"                  
+        }) 
     })
-
-   
 })
-
 
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

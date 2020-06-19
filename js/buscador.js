@@ -12,45 +12,44 @@ window.addEventListener("load", function() {
 
     .then(function(information) {
         
-            let resultados = information.data
+        let resultados = information.data
 
-            console.log(resultados);
-          
-            if (resultados == undefined || resultados.length == 0) {
-                document.querySelector(".resultados-tracks").innerHTML =
-                `
-                <p>No se han encontrado canciones</p>
-                `
-            }
+        console.log(resultados);
+        
+        if (resultados == undefined || resultados.length == 0) {
+            document.querySelector(".resultados-tracks").innerHTML =
+            `
+            <p>No se han encontrado canciones</p>
+            `
+        }
 
-            for (let i = 0; i < 4; i++) {
-                const element = resultados[i];
+        for (let i = 0; i < 4; i++) {
+            const element = resultados[i];
 
-                let nombreTrack = element.title
-                let imagen = element.album.cover_xl
+            let nombreTrack = element.title
+            let imagen = element.album.cover_xl
 
-                let idTrack = element.id
+            let idTrack = element.id
 
-
-                document.querySelector(".resultados-tracks").innerHTML += 
-                `<article>
-                    <a href="Tracks.html?idTrack=`+ idTrack +`"><img src="`+ imagen +`" alt="Foto de la canción` + ` ` + nombreTrack + `">
-                    <h2 class="nombre-track">`+ nombreTrack +`</h2>
-                    </a>
-                </article> `
+            // resultado de tracks
+            document.querySelector(".resultados-tracks").innerHTML += 
+            `<article>
+                <a href="Tracks.html?idTrack=`+ idTrack +`"><img src="`+ imagen +`" alt="Foto de la canción` + ` ` + nombreTrack + `">
+                <h2 class="nombre-track">`+ nombreTrack +`</h2>
+                </a>
+            </article> `
+            
+        }
                 
-            }
-                
 
-        })
+    })
 
 
         fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q="+ search)
         .then(
             function(respuesta) {
                 return respuesta.json();            
-            }
-        )
+            })
     
         .then(function(information) {
             
@@ -73,14 +72,14 @@ window.addEventListener("load", function() {
 
                 let idArtista = element.id
 
-
+                // resultado de artistas
                 document.querySelector(".resultados-artists").innerHTML += 
                 `<article>
                     <a href="Artists.html?idArtista=`+ idArtista +`"><img src="`+ imagen +`" alt="Foto de` + ` ` + nombreArtista + `">
                     <h2 class="nombre-track">`+ nombreArtista +`</h2>
                     </a>
                 </article> `
-                }
+            }
 
         })
     
@@ -89,8 +88,7 @@ window.addEventListener("load", function() {
         .then(
             function(respuesta) {
                 return respuesta.json();            
-            }
-        )
+            })
     
         .then(function(information) {
             
@@ -113,17 +111,16 @@ window.addEventListener("load", function() {
 
                 let idAlbum = element.id
 
-
+                // resultado de albums
                 document.querySelector(".resultados-albums").innerHTML += 
                 `<article>
                     <a href="Albums.html?idAlbum=`+ idAlbum +`"><img src="`+ imagen +`" alt="Foto del album` + ` ` + nombreAlbum + `">
                     <h2 class="nombre-track">`+ nombreAlbum +`</h2>
                     </a>
                 </article> `
-                }
-
-       
+            }
         })
+
         /*SPINNER no funca 
         document.querySelector(".loader").style.display = "none"            
 

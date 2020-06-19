@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
 
-     if(localStorage.getItem("cancionesFavs") != null) {
+    if(localStorage.getItem("cancionesFavs") != null) {
 
         let ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
 
@@ -11,8 +11,7 @@ window.addEventListener("load", function() {
             .then(
                 function(respuesta) {
                     return respuesta.json();            
-                }
-            )
+                })
 
             .then(function(information) {
     
@@ -26,6 +25,7 @@ window.addEventListener("load", function() {
                 let idTrack = track.id
                 let idArtista = track.artist.id
         
+                //canciones de la playlist
                 document.querySelector(".cancionesFavs").innerHTML += 
                 `<li>
                 <a href="Tracks.html?idTrack=`+ idTrack +`">`+ nombreCancion +`</a></h4>
@@ -33,29 +33,26 @@ window.addEventListener("load", function() {
                 </li>`
             
                 //SPINNER 
-         document.querySelector(".loader").style.display = "none"            
+                document.querySelector(".loader").style.display = "none"            
 
-         document.querySelector("main").style.display = "block"   
+                document.querySelector("main").style.display = "block"   
          
             })
 
-        }
+        } 
 
-         
+    //si no hay canciones guardadas
+    }else{    
+        alert("Aún no has agregado canciones a tu playlist")
 
-        }else{    
-            alert("Aún no has agregado canciones a tu playlist")
+        document.querySelector(".loader").style.display = "none"            
 
-            document.querySelector(".loader").style.display = "none"            
+        document.querySelector("main").style.display = "block"   
 
-            document.querySelector("main").style.display = "block"   
-
-            document.querySelector(".cancionesFavs").innerHTML =
-                `
-                <p> No se han encontrado artistas</p>
-                ` 
-            
-        }
+        document.querySelector(".cancionesFavs").innerHTML =
+            `
+            <p>No se han encontrado canciones guardadas</p>
+            ` 
         
-  
+    }
 })

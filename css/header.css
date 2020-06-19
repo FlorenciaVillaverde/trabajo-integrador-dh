@@ -61,43 +61,42 @@ header .contenedor .menu ul li{
 
 @media (min-width: 768px){
 
-.menu{
-	display: none;
-}
+	.menu{
+		display: none;
+	}
 
-#search-mobile{
-    background-color: rgba(26,26,26,0.8);
-    border: none;
-	border-radius: none;
-}
+	#search-mobile{
+		background-color: rgba(26,26,26,0.8);
+		border: none;
+		border-radius: none;
+	}
 
-.titulos{
-	display: grid;
-	grid-template-columns: 10% 15% 15%;
-	justify-content: space-evenly;
-	padding: 12px 0px;
-}
+	.titulos{
+		display: grid;
+		grid-template-columns: 10% 15% 15%;
+		justify-content: space-evenly;
+		padding: 12px 0px;
+	}
 
-a{
-	color: azure;
-	text-align: left;
-}
-	
-.contenedor{
-	grid-template-columns: 5% 60% 20%;
-}
+	a{
+		color: azure;
+		text-align: left;
+	}
+		
+	.contenedor{
+		grid-template-columns: 5% 60% 20%;
+	}
 
-.logo{
-	margin: auto;
-}
+	.logo{
+		margin: auto;
+	}
 
-.lupita{
-	padding-left: 90%;
-	margin-top: 10px;
-}
+	.lupita{
+		padding-left: 90%;
+		margin-top: 10px;
+	}
 
-.uk-search-input{
-	margin-top: 0;
-}
-
+	.uk-search-input{
+		margin-top: 0;
+	}
 }

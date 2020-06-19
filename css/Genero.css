@@ -13,14 +13,6 @@ main{
     padding-top: 60px;
 }
 
-#foto-genero{
-	width: 50%;
-	margin: 0 auto;
-	margin-top: 50px;
-    display: block;
-    border: 1px solid white;
-}
-
 div h1{
 	text-align: center;
 	color: azure;
@@ -39,6 +31,7 @@ main section img{
     width: 100%;
     border-radius: 50%;
 }
+
 article{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -46,10 +39,8 @@ article{
 
 .nombre-artista{
     color: azure;
-    text-decoration: none;
     text-align: center;
     font-size: larger;
-    
 }
 
 
@@ -63,23 +54,22 @@ footer section{
 }
 
 article p{
-color: black;
-text-align: center;
+    color: black;
+    text-align: center;
 }
 
 footer section article {
-margin: auto;
+    margin: auto;
 }
 
 footer section article a{
-color: black;
+    color: black;
 }
 
 .logo{
-width: 100%;
-margin: auto;
+    width: 100%;
+    margin: auto;
 }
-
 
 @media (min-width: 768px) {
     
@@ -87,7 +77,6 @@ margin: auto;
         text-align: left;
         font-size: 50px;
         margin-left: 3%;
-        
     }
 
     main{
@@ -98,7 +87,6 @@ margin: auto;
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
         justify-content: space-around;
-    
     }
 
     #foto-genero{

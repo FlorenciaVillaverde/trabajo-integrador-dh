@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 
     .then(function(response) {
         return response.json()
-      })
+    })
 
     .then(function(information) {
         console.log(information);
@@ -21,6 +21,7 @@ window.addEventListener("load", function() {
 
         let idArtist = album.artist.id
 
+        //detalle del album(foto, nombre, artista del album)
         document.querySelector(".album").innerHTML = 
         `
         <div>
@@ -39,11 +40,12 @@ window.addEventListener("load", function() {
             let tracks = element.title
             let idTrack = element.id
 
+            //canciones del album
             document.querySelector(".tracks").innerHTML += 
             `
             <section>
                 <article class="iconos">
-                    <i class="fas fa-play"></i>
+                    <a href="Tracks.html?idTrack=`+ idTrack +`"> <i class="fas fa-play"></i> </a>
                 </article>
                 
                 <article>
@@ -56,7 +58,42 @@ window.addEventListener("load", function() {
             </section>
             `
         }
+        
+        let estreno = album.release_date
+        let duracion = album.duration
+        duracion = Math.floor(duracion/60) +  " " + "mins" + " " + duracion%60 + " " + "segs"
+        let fotoArtista = album.artist.picture_xl
+        let genero = album.genres.data
+        
+       
+        //detalle del album (foto artista, entreno, duracion, genero)
+        document.querySelector(".informacion-album").innerHTML =
+        `
+        <ul>
+            <li><a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`"></a></li>
+            
+            <div>
+                <li>`+ estreno +`</li>
+                <li>`+ duracion +`</li>
+                <li class="genero"> Género - </li>
+            </div>
+        </ul>
+        `
+        
+        //for que recorre el array de generos
+        for (let i = 0; i < genero.length; i++) {
+            const element = genero[i];
+            
+           let nombreGenero = element.name
+           let idGenero = element.id
 
+            document.querySelector(".genero").innerHTML += 
+            `
+            <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero + " " + "-" + `</a>
+            ` 
+        }
+
+        //Storage para favear a mi playlist
         let botoncitos = document.querySelectorAll(".botoncito")
                 
         for (let i = 0; i < botoncitos.length; i++) {
@@ -75,8 +112,6 @@ window.addEventListener("load", function() {
             element.addEventListener("click", function () {
                 
                 let ArrayCancionesFavs
-
-                //console.log(this.parentNode.parentNode);
                 
                 if(localStorage.getItem("cancionesFavs") != null){
                     ArrayCancionesFavs = localStorage.getItem("cancionesFavs").split(",")
@@ -99,38 +134,7 @@ window.addEventListener("load", function() {
             })
         }
 
-        let estreno = album.release_date
-        let duracion = album.duration
-        duracion = Math.floor(duracion/60) +  " " + "mins" + " " + duracion%60 + " " + "segs"
-        let fotoArtista = album.artist.picture_xl
-        let genero = album.genres.data
-        
        
-
-        document.querySelector(".informacion-album").innerHTML =
-        `
-        <ul>
-            <li><a href="Artists.html?idArtista=`+ idArtist +`"><img src="`+ fotoArtista +`" alt="Foto de`+ " " + nombreArtista +`"></a></li>
-            
-            <div>
-                <li>`+ estreno +`</li>
-                <li>`+ duracion +`</li>
-                <li class="genero"> Género - </li>
-            </div>
-        </ul>
-        `
-
-        for (let i = 0; i < genero.length; i++) {
-            const element = genero[i];
-            
-           let nombreGenero = element.name
-           let idGenero = element.id
-
-            document.querySelector(".genero").innerHTML += 
-            `
-            <a href="Genero.html?idGenero=`+ idGenero +`">`+ nombreGenero + " " + "-" + `</a>
-            ` 
-        }
 
         //SPINNER 
         document.querySelector(".loader").style.display = "none"            
